@@ -1,0 +1,23 @@
+auto: true # false
+# server: true
+# server_port: 4000
+# destination: ./_site
+# source: ./
+# markdown: maruku # rdiscount
+# pygments: false # github default true
+lsi: true # github default true - produces latent semantic (related) index of posts
+permalink: /blog/:categories/:year/:month/:day/:title # date
+# paginate: 10
+# maruku:
+#   use_tex:    false
+#   use_divs:   false
+#   png_dir:    images/latex
+#   png_url:    /images/latex
+exclude:
+- .git
+- .gitignore
+- NOTES.txt
+
+# custom globals
+url: http://www.metafeather.net/
+# prefix: blog
