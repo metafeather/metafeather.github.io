@@ -1,0 +1,21 @@
+body, table, td, th, p {font-family: Arial, Helvetica;}
+th {text-align: left;}
+p {margin-top: 0;}
+
+a {
+  text-decoration: none; 
+  font-weight: bold; 
+  color: #000000;
+}
+a:hover {color: #006699;}
+a.nav {color: #000000;}
+a.title {color: #000000;}
+
+/* Left hand menus */
+td.sidebar ul {
+  margin: 2px;
+  margin-left: -1em;
+}
+td.sidebar ul a {
+  font-size: 80%;
+}
