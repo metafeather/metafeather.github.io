@@ -39,6 +39,7 @@ table.menu {
   margin-bottom: 1em;
   background-color: #000;
   border-spacing: 0;
+  _border-collapse: collapse;
   border: 2px solid #000;
 }
 table.menu th {
@@ -54,6 +55,7 @@ table.menu td {
 table.menu td ul {
   margin: 2px;
   margin-left: -1em;
+  _margin-left: 2px;
 }
 table.menu td ul a {
   font-size: 80%;
@@ -65,6 +67,7 @@ table.block {
   margin-bottom: 1em;
   background-color: #000;
   border-spacing: 0;
+  _border-collapse: collapse;
   border: 2px solid #000;
 }
 table.block th {
