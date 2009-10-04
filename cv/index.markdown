@@ -21,7 +21,7 @@ title: 'metafeather.net - CV for Liam Clancy, Web Developer'
 	</tr>
 	<tr>
 	<td bgcolor="#000000">
-	<img src="/common/images/gone.gif" alt="" width="1" height="1" /><br />
+	<img src="../images/old/gone.gif" alt="" width="1" height="1" /><br />
 	</td>
 	</tr>
 	</table>

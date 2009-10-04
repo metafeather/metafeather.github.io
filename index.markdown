@@ -55,7 +55,7 @@ title: 'metafeather.net - CV for Liam Clancy, Web Developer'
 	<td height="150" align="center">
 	
   <!-- JS feed of bookmarks -->
-  <script type="text/javascript" src="http://feeds.delicious.com/v2/js/metafeather?title=&count=10&sort=date"></script>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/js/metafeather?title=&amp;count=10&amp;sort=date"></script>
 	
 	</td>
 	</tr>
