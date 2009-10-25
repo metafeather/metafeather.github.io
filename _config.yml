@@ -5,8 +5,8 @@ auto: true # false
 # source: ./
 # markdown: maruku # rdiscount
 # pygments: false # github default true
-lsi: true # github default true - produces latent semantic (related) index of posts
-permalink: /blog/:categories/:year/:month/:day/:title # date
+lsi: false # github default false - produces latent semantic (related) index of posts
+permalink: /blog/:year/:month/:day/:title # date
 # paginate: 10
 # maruku:
 #   use_tex:    false
@@ -14,9 +14,13 @@ permalink: /blog/:categories/:year/:month/:day/:title # date
 #   png_dir:    images/latex
 #   png_url:    /images/latex
 exclude:
-- .git
-- .gitignore
-- NOTES.txt
+ - NOTES.txt
+ - .git
+ - .gitignore
+ - Rakefile
+ - Capfile
+ - config
+ - lib
 
 # custom globals
 url: http://www.metafeather.net/

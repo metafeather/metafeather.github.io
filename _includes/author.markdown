@@ -1,1 +1,0 @@
-## by <span class="author">{{ page.author }}</span> in {{ page.categories }} at {{ site.time }}

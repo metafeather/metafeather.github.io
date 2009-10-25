@@ -1,25 +1,82 @@
 ---
-published: true
+published: false
 layout: post
 categories:
-- examples
+- example
+- markdown
+comments: true
 
 title: Example post page
 author: Liam Clancy
 ---
 
-### Metadata
+<!-- ref: http://maruku.rubyforge.org/maruku.html#toc-generation -->
+* Maruku compatible TOC generator 
+{:toc}
+
+Examples of styles in a post.
+
+## Site Metadata
+
+* site.app_url = {{ site.app_url }}
+
+## Page Metadata
 
 * page.title = {{ page.title }}
 * page.url = {{ page.url }}
 * page.date = {{ page.date }}
+  * page year = {{ page.date | date: "%Y" }}
+  * page month = {{ page.date | date: "%m" }}
+  * page month name = {{ page.date | date: "%B" }}
+  * page day = {{ page.date | date: "%d" }}
+  * page day name = {{ page.date | date: "%A" }}
 * page.id = {{ page.id }}
-* page.categories = {{ page.categories }}
-* page.topics = {{ page.topics }}
+* page.categories = {{ page.categories | array_to_sentence_string }}
+* page.comments = {{ page.comments }}
 
-# Markdown: Syntax
+## Elements
 
-{% include author.markdown %}
+<div class="pullout note">
+  <p>A note is to inform the user that there may be additional information they may wish to consult and where this is located, e.g. for a different OS platform.</p>
+</div>
+
+<div class="pullout info">
+  <p>An info is to provide context for the main information.</p>
+</div>
+
+<div class="pullout warning">
+  <p>Warnings should come before the instructions that may do something bad.</p>
+</div>
+
+<div class="pullout warning strong">
+  <p>Warnings should come before the instructions that may do something bad.</p>
+</div>
+
+
+<div class="pullout code">
+  <code>
+    Code is for pesudo-code.
+  </code>
+</div>
+
+<div class="pullout code">
+  <pre>
+    > Code is also for manually formatted 
+    > fragments of code.
+  </pre>
+</div>
+
+<pre class="brush: html;">
+    <div class="hpage">
+      <ul>
+        <li class="name">Microformat examples</li>
+        <li class="title">Microformat blog: Microformat examples</li>
+        <li class="category">microformat spec web html</li>
+      </ul>
+    </div>
+</pre>
+
+## Markdown: Syntax
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
@@ -27,7 +84,7 @@ author: Liam Clancy
     *   [Automatic Escaping for Special Characters](#autoescape)
 *   [Block Elements](#block)
     *   [Paragraphs and Line Breaks](#p)
-    *   [Headers](#header)
+    *   [Headers](#headers)
     *   [Blockquotes](#blockquote)
     *   [Lists](#list)
     *   [Code Blocks](#precode)
@@ -40,12 +97,6 @@ author: Liam Clancy
 *   [Miscellaneous](#misc)
     *   [Backslash Escapes](#backslash)
     *   [Automatic Links](#autolink)
-
-
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL][src].
-
-  [src]: /projects/markdown/syntax.text
 
 * * *
 
@@ -218,7 +269,7 @@ work best -- and look better -- when you format them with hard breaks.
 
 
 
-<h3 id="header">Headers</h3>
+<h3 id="headers">Headers</h3>
 
 Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
 

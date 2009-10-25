@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="user-scalable=yes">
+	<title>{{ page.title }} - metafeather.net</title>
+  <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="jshub.org Blog" type="application/atom+xml" />
+  {% include yui3.html %} 
+  {% include stylesheets.html %} 
+  <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/page.css" type="text/css" />
+</head>
+<body class="mf blog yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+  {% include hpage.html %}
+  {% include banner.html %}
+
+  <div class="yui-d-custom page 
+    {% for cat in page.categories %}
+      {{ cat | prepend: ' category_' }}
+    {% endfor %}
+  ">
+  
+    <div class="content">
+      <div class="yui-main">
+        <div class="yui-b col1">
+  
+        <h1>
+            {{ page.title }}
+        </h1>
+  
+        {{ content }}
+  
+        </div><!-- col1 -->
+      </div><!-- yui-main -->
+    </div><!-- content -->
+
+	</div><!-- post -->
+
+{% include footer.html %}
+
+</body>
+</html>

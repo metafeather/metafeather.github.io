@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>{{ page.title }} - metafeather.net</title>
+  {% include yui3.html %} 
+  {% include stylesheets.html %} 
+  {% include syntaxhighlighter.html %}   
+</head>
+<body class="mf wiki yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+
+  {% if page.ribbon %}  
+    {% include fork_me_on_github.html %}
+  {% endif %}
+
+  {% include hpage.html %}
+  {% include banner.html %}
+
+  <div class="yui-d-custom page 
+    {% for cat in page.categories %}
+      {{ cat | prepend: ' category_' }}
+    {% endfor %}
+  ">
+
+    <div class="content">
+      <div class="yui-main">
+        <div class="yui-b col1">
+  
+        {{ content }}
+  
+        </div><!-- col1 -->
+      </div><!-- yui-main -->
+    </div><!-- content -->
+
+	</div><!-- page -->
+
+
+{% include footer.html %}
+
+</body>
+</html>

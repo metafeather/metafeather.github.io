@@ -1,12 +1,73 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<title>{{ page.title }}</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="user-scalable=yes">
+	<title>{{ page.title }} - metafeather's blog</title>
+  <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="jshub.org Blog" type="application/atom+xml" />
+  {% include yui3.html %} 
+  {% include stylesheets.html %} 
+  <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/post.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/home.css" type="text/css" />
+  {% include syntaxhighlighter.html %}   
+  {% include blog/runcoderun.html %}
 </head>
-<body>
+<body class="mf home blog yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+  {% include hpage.html %}
+  {% include banner.html %}
 
-{{ content }}
+  <div class="yui-d-custom post 
+    {% for cat in page.categories %}
+      {{ cat | prepend: ' category_' }}
+    {% endfor %}
+  ">
+  
+    <div class="yui-t4 content">
+      <div class="yui-main">
+        <div class="yui-b col1">
+          
+          <div class="wrapper">
+          
+          {{ content }}
+
+          </div><!-- wrapper -->
+  
+        </div><!-- col1 -->
+      </div><!-- yui-main -->
+      <div class="yui-b col2 sidebar">
+            
+        {% case page.feature %}
+        {% when 'core' %}
+        {% include blog/featured_projects_core.html %}
+        {% endcase %}
+                
+        <hr />
+        
+        {% include blog/search.html %}      
+
+        <hr />
+        
+      </div><!-- col2 -->
+    </div><!-- content -->
+    <div class="yui-gb extra-content">
+
+        <div class="yui-u first col1">
+        <!-- Col 1 -->
+        </div>
+        <div class="yui-u col2">
+        <!-- Col 2 -->
+        </div>
+        <div class="yui-u col3">
+        <!-- Col 3 -->
+        </div>
+
+    </div><!-- extra content -->
+
+	</div><!-- post -->
+
+{% include footer.html %}
 
 </body>
 </html>

@@ -1,14 +1,85 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<title>{{ page.title }}</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="user-scalable=yes">
+	<title>{{ page.title }} - metafeather's blog</title>
+  <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="jshub.org Blog" type="application/atom+xml" />
+  {% include yui3.html %} 
+  {% include stylesheets.html %} 
+  <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/post.css" type="text/css" />
+  {% include syntaxhighlighter.html %}   
+  {% include blog/runcoderun.html %}
 </head>
-<body>
+<body class="mf blog yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
+  {% include hpage.html %}
+  {% include banner.html %}
 
-{{ content }}
+  <div class="yui-d-custom post 
+    {% for cat in page.categories %}
+      {{ cat | prepend: ' category_' }}
+    {% endfor %}
+  ">
 
-{% include author.html %}
+    <div class="yui-t4 content">
+      <div class="yui-main">
+        <div class="yui-b col1">
+
+          <h1>{{ page.title }}</h1>
+          
+          <div class="wrapper">
+          {{ content }}
+
+          <hr />
+
+          {% include blog/author.markdown %}  
+                    
+          {% include blog/disqus.html %} 
+          </div><!-- wrapper -->
+  
+        </div><!-- col1 -->
+      </div><!-- yui-main -->
+      <div class="yui-b col2 sidebar">
+            
+        {% case page.feature %}
+        {% when 'core' %}
+          {% include blog/featured_projects_core.html %}
+        {% when 'hpage' %}
+          {% include blog/featured_projects_hpage.html %}
+        {% endcase %}
+        
+        <h3 class="rss">
+          <a href="/rss/blog/atom.xml" title="Subscribe to the RSS feed">
+            Previous Posts
+          </a>
+        </h3>
+  
+        {% if site.posts != empty %}
+          <ul class="recent">
+            {% for post in site.posts limit:10 %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+          <p>
+            &raquo; 
+            <a href="/blog/">More</a>
+          </p>
+        {% else %}
+          <p>The are no previous posts.</p>
+        {% endif %}
+        
+        <hr />
+        
+        {% include blog/search.html %}      
+
+        <hr />
+        
+      </div><!-- col2 -->
+    </div><!-- content -->
+
+	</div><!-- post -->
 
 {% include footer.html %}
 
