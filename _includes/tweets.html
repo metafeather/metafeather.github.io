@@ -1,13 +1,13 @@
 <!-- JS include recent tweets -->
-<div class="tweet"></div>
-<script language="javascript" src="/javascripts/tweet/jquery.tweet.js" type="text/javascript"></script>
-<script type='text/javascript'>
+<div class="tweet"><!-- placeholder --></div>
+<script src="/javascripts/tweet/jquery.tweet.js" type="text/javascript"><!-- tweet.js --></script>
+<script type="text/javascript">
     $(document).ready(function(){
         $(".tweet").tweet({
             username: "metafeather",
             join_text: "auto",
             avatar_size: 0,
-            count: 5,
+            count: 10,
             auto_join_text_default: "I said,",
             auto_join_text_ed: "I",
             auto_join_text_ing: "I was",
