@@ -6,7 +6,22 @@ title: Blog archive
 {% if site.posts != empty %}
   <ul class="archive">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="hentry">
+        <abbr class="published updated" title="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date_to_string }}
+        </abbr> 
+        &raquo; 
+        <a class="entry-title" href="{{ post.url }}" rel="bookmark">
+          {{ post.title }}
+        </a>
+        {% if post.author %}
+          <span class="vcard name author" style="display:none">
+            <a href="/about/" class="url fn n uid" title="About {{ post.author }}">
+              {{ post.author }}
+            </a>
+          </span> 
+        {% endif %}
+      </li>
     {% endfor %}
   </ul>
 {% else %}
