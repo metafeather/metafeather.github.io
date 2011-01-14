@@ -53,6 +53,11 @@ a img {
 	border-bottom: 1px solid #ccc;
 }
 
+#collection_info #user img {
+    width: 60px;
+    height: 60px;
+}
+
 #collection_info #username {
 	margin: 0 10px;
 	font-size: 14pt;
