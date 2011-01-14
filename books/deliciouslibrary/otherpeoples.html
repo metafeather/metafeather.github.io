@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="media-per-column" content="7" />
-        <meta name="columns-per-page" content="2" />
-        <script type="text/javascript">        if (!!navigator.userAgent.match(/iP*.*Mobile.*Safari/))
-            window.location.pathname = window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/iphone";
-    </script>
+        <meta name="media-per-column" content="2800" />
+        <meta name="columns-per-page" content="1" />
         <title>Library</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="animator.js" type="text/javascript"></script>
-        <script src="prototype.js" type="text/javascript"></script>
-        <script src="effects.js" type="text/javascript"></script>
-        <script src="dragdrop.js" type="text/javascript"></script>
-        <script src="library.js" type="text/javascript"></script>
+        <style type="text/css">body {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+td {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+a {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+.asin {display:none;}
+.description {display:none;}
+</style>
+        <script language="javascript" type="text/javascript">function toggle(dDiv) {
+        var theDiv = document.getElementById(dDiv);
+        theDiv.style.display = theDiv.style.display == 'none' ? 'inline' : 'none';
+}
+</script>
     </head>
     <body>
         <div id="header">
             <div id="header_main">
                 <div id="collection_info">
-                    <div id="user">
-                        <img src="images/607F7525-1CD9-4B73-B0B6-E214DE734082.png" alt="" />
-                    </div>
-                    <div id="username">Liam Clancy
+                    <div id="user"></div>
+                    <div id="username">Liam Clancy Library
 </div>
                     <div id="stats">
-                        <div id="total">Collection Total:<br />
-                            <span style="font-weight: bold">1504 Items</span>
+                        <div id="total">Collection Total: <span style="font-weight: bold">1504 Items</span>
                             
 </div>
-                        <div id="updated">Last Updated:<br />
-                            <span style="font-weight: bold">Jan 14, 2011</span>
+                        <div id="updated">Last Updated: <span style="font-weight: bold">Jan 14, 2011</span>
                             
 </div>
                     </div>
@@ -49,73 +53,103 @@
                         <span class="label">Shelf:</span>
                         <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >Books</option><option value="movies.html" >Movies</option><option value="music.html" >Music</option><option value="videogames.html" >Videogames</option><option value="coffeetable.html" >Coffee Table</option><option value="donated.html" >Donated</option><option value="fiction.html" >Fiction</option><option value="otherpeoples.html" selected="selected">Other Peoples</option><option value="reference.html" >Reference</option><option value="touchclarity.html" >Touch Clarity</option><option value="travel.html" >Travel</option><option value="recentlyadded.html" >Recently Added</option><option value="toread.html" >To read</option></select>
 </div>
-                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
+                    <div class="crumbs">Page: <span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
 </div>
                 </div>
                 <!-- End navigation -->
                 <hr />
                 <div id="media">
-                    <div id="zoom">
-                        <div class="closebox" onclick="this.parentNode.style.visibility = 'hidden';"></div>
-                        <a id="zoom_link" href="#" name="zoom_link">
-                            <img id="zoom_image" src="" alt="" />
-                        </a>
-                    </div>
-                    <script type="text/javascript" charset="utf-8">                new Draggable('zoom', {});
-            </script>
                     <table>
 <tr>
                             <td>
                                 <div class="medium" id="medium5C47409A-1C8E-4272-B181-4A7BEC2704AB">
-                                    <div class="cover" onclick="showZoomedCover('5C47409A-1C8E-4272-B181-4A7BEC2704AB');">
-                                        <img src="images/5C47409A-1C8E-4272-B181-4A7BEC2704AB-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/1855384272?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Art of Dreaming</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Carlos%20Castaneda&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Carlos Castaneda  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc5C47409A-1C8E-4272-B181-4A7BEC2704AB')">
+                                                    <img src="images/5C47409A-1C8E-4272-B181-4A7BEC2704AB-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/1855384272?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Art of Dreaming</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Carlos%20Castaneda&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Carlos Castaneda  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc5C47409A-1C8E-4272-B181-4A7BEC2704AB">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Art of Dreaming -->
                                     <span class="asin">1855384272</span>
                                 </div>
                                 <div class="medium" id="medium85C2AD38-928A-4C5E-9568-BDDC72DD30C2">
-                                    <div class="cover" onclick="showZoomedCover('85C2AD38-928A-4C5E-9568-BDDC72DD30C2');">
-                                        <img src="images/85C2AD38-928A-4C5E-9568-BDDC72DD30C2-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/0767904338?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Second Coming of Steve Jobs</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Alan%20Deutschman&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Alan Deutschman  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc85C2AD38-928A-4C5E-9568-BDDC72DD30C2')">
+                                                    <img src="images/85C2AD38-928A-4C5E-9568-BDDC72DD30C2-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/0767904338?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Second Coming of Steve Jobs</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Alan%20Deutschman&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Alan Deutschman  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc85C2AD38-928A-4C5E-9568-BDDC72DD30C2">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Second Coming of Steve Jobs -->
                                     <span class="asin">0767904338</span>
                                 </div>
                                 <div class="medium" id="mediumFBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB">
-                                    <div class="cover" onclick="showZoomedCover('FBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB');">
-                                        <img src="images/FBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/0752858548?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Bourne Identity</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Robert%20Ludlum&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Robert Ludlum  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descFBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB')">
+                                                    <img src="images/FBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/0752858548?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Bourne Identity</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Robert%20Ludlum&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Robert Ludlum  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descFBE4AC45-F725-43BF-AF3B-8C5B0B1DFBCB">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Bourne Identity -->
                                     <span class="asin">0752858548</span>
                                 </div>
                             </td>
-                            <td></td>
                         </tr>
                     </table>
                 </div>
@@ -135,7 +169,7 @@
             <a href="http://www.delicious-monster.com">
                 <img src="images/monster.png" alt="" />
                  Made with Delicious Library</a>
-            <p>Springfield, State zipflap congrotus delicious library Clancy, Liam
+            <p style="display:none">Springfield, State zipflap congrotus delicious library Clancy, Liam
 </p>
         </div>
         <!-- End footer -->

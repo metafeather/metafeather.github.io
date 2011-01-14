@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="media-per-column" content="7" />
-        <meta name="columns-per-page" content="2" />
-        <script type="text/javascript">        if (!!navigator.userAgent.match(/iP*.*Mobile.*Safari/))
-            window.location.pathname = window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/iphone";
-    </script>
+        <meta name="media-per-column" content="2800" />
+        <meta name="columns-per-page" content="1" />
         <title>Library</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="animator.js" type="text/javascript"></script>
-        <script src="prototype.js" type="text/javascript"></script>
-        <script src="effects.js" type="text/javascript"></script>
-        <script src="dragdrop.js" type="text/javascript"></script>
-        <script src="library.js" type="text/javascript"></script>
+        <style type="text/css">body {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+td {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+a {
+        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+.asin {display:none;}
+.description {display:none;}
+</style>
+        <script language="javascript" type="text/javascript">function toggle(dDiv) {
+        var theDiv = document.getElementById(dDiv);
+        theDiv.style.display = theDiv.style.display == 'none' ? 'inline' : 'none';
+}
+</script>
     </head>
     <body>
         <div id="header">
             <div id="header_main">
                 <div id="collection_info">
-                    <div id="user">
-                        <img src="images/607F7525-1CD9-4B73-B0B6-E214DE734082.png" alt="" />
-                    </div>
-                    <div id="username">Liam Clancy
+                    <div id="user"></div>
+                    <div id="username">Liam Clancy Library
 </div>
                     <div id="stats">
-                        <div id="total">Collection Total:<br />
-                            <span style="font-weight: bold">1504 Items</span>
+                        <div id="total">Collection Total: <span style="font-weight: bold">1504 Items</span>
                             
 </div>
-                        <div id="updated">Last Updated:<br />
-                            <span style="font-weight: bold">Jan 14, 2011</span>
+                        <div id="updated">Last Updated: <span style="font-weight: bold">Jan 14, 2011</span>
                             
 </div>
                     </div>
@@ -49,34 +53,39 @@
                         <span class="label">Shelf:</span>
                         <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >Books</option><option value="movies.html" >Movies</option><option value="music.html" >Music</option><option value="videogames.html" selected="selected">Videogames</option><option value="coffeetable.html" >Coffee Table</option><option value="donated.html" >Donated</option><option value="fiction.html" >Fiction</option><option value="otherpeoples.html" >Other Peoples</option><option value="reference.html" >Reference</option><option value="touchclarity.html" >Touch Clarity</option><option value="travel.html" >Travel</option><option value="recentlyadded.html" >Recently Added</option><option value="toread.html" >To read</option></select>
 </div>
-                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> <a class="page" href="videogames-2.html">2</a> </span><a class="arrow right" href="videogames-2.html">&nbsp;&nbsp;&nbsp;</a> 
+                    <div class="crumbs">Page: <span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
 </div>
                 </div>
                 <!-- End navigation -->
                 <hr />
                 <div id="media">
-                    <div id="zoom">
-                        <div class="closebox" onclick="this.parentNode.style.visibility = 'hidden';"></div>
-                        <a id="zoom_link" href="#" name="zoom_link">
-                            <img id="zoom_image" src="" alt="" />
-                        </a>
-                    </div>
-                    <script type="text/javascript" charset="utf-8">                new Draggable('zoom', {});
-            </script>
                     <table>
 <tr>
                             <td>
                                 <div class="medium" id="mediumE2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A">
-                                    <div class="cover" onclick="showZoomedCover('E2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A');">
-                                        <img src="images/E2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B00005NZW0?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">SSX Tricky</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descE2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A')">
+                                                    <img src="images/E2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B00005NZW0?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">SSX Tricky</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descE2ED1AD2-9F09-474A-AFCE-F355E9DBAA6A">
                                         <p>In the PlayStation 2's first few months there were only a few standout games; one of them, SSX, brought snowboarding to people who didn't even like snowboarding. Now, only a year later, PS2 fans get a new reason to stay indoors during the cold winter months. SSX Tricky is its name, and it more than lives up to the moniker.<br />
                                             <br />
                                             SSX Tricky removes two characters from the previous game and adds five new ones and adds two new race locations—Garibaldi and Alaska—to the already beefed up World Circuit. Features have also been added to the older tracks, effectively making them new again. Tricky improves the graphics a bit and refines the controls. The game also tweaks the basic gameplay by letting you upgrade your boarder's stats in races, but also forcing you to attempt and master the show-off mode as well. And they went a long way toward improving the challenge by evening out the learning curve. The first game tended to be a cakewalk until the later races in each set; this time your rivals get more intense and aggressive depending upon the lap you're taking.<br />
@@ -89,16 +98,29 @@
                                     <span class="asin">B00005NZW0</span>
                                 </div>
                                 <div class="medium" id="medium1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7">
-                                    <div class="cover" onclick="showZoomedCover('1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7');">
-                                        <img src="images/1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B000060OEU?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Star Wars: Jedi Starfighter</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7')">
+                                                    <img src="images/1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000060OEU?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Star Wars: Jedi Starfighter</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc1EB4D5E7-4C55-4F39-A0D9-3701BE41E1C7">
                                         <p>Jedi Starfighteris the latest in that much abused of gaming genres, the Star Warsgame. Included in the few gems was Jedi's prequel, Star Wars: Starfighter, a cockpit-view shooter that stood out among early PS2 titles. Jediserves more as an extra set of missions than a full-blown follow-up, but there are some new features and the gameplay feels a lot smoother. The finest of these new additions are the Force weapons; when playing as the Starfighter itself, you're able to utilise the Force to unleash mass devastation on your foes. The 15 missions alternate between control of this craft and a more robust ship well stocked with missiles; despite being based around a basic protect-and-shoot premise, the missions are nicely varied in style.<br />
                                             <br />
                                             The controls are baffling at first but you'll soon be pulling off some outrageous manoeuvres as you hunt down the enemy ships while issuing commands to your comrades. The graphics in these dogfights are fantastic, especially when using the zoom option, but larger ships tend to explode in a less than convincing fashion. The lack of recognisable characters, bar an appearance from Mace Windu and a Yoda voiceover, does detract, as does the lack of the classic Star Warsships (the game is based indirectly on Episode 2). This is partially made up for by an unlockable Tie Fighter along with some new missions and some truly bizarre bonus material. While being a bit too similar to the previous game to warrant buying both, Jedi Starfighteris a very accomplished title that only suffers slightly from its repetitive nature.—Jonathan Winter</p>
@@ -107,16 +129,29 @@
                                     <span class="asin">B000060OEU</span>
                                 </div>
                                 <div class="medium" id="medium1F0CA1B3-0C0B-4805-9E59-4430F432EEDA">
-                                    <div class="cover" onclick="showZoomedCover('1F0CA1B3-0C0B-4805-9E59-4430F432EEDA');">
-                                        <img src="images/1F0CA1B3-0C0B-4805-9E59-4430F432EEDA-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B00005V12U?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Deus Ex</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc1F0CA1B3-0C0B-4805-9E59-4430F432EEDA')">
+                                                    <img src="images/1F0CA1B3-0C0B-4805-9E59-4430F432EEDA-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B00005V12U?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Deus Ex</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc1F0CA1B3-0C0B-4805-9E59-4430F432EEDA">
                                         <p>Console owners have been waiting a long time for Deus Ex. The seminal PC game, which seamlessly blends action, adventure and role-playing elements into one near perfect package, has now landed on the PS2, and luckily it's pretty much intact.<br />
                                             <br />
                                             It's 2052 and you play JC Denton, a nanotechnologically-enhanced, trench coat-wearing employee of anti-terrorist organisation UNATCO. At the beginning of the game, UNATCO is embroiled in a war with one particular faction who is demanding vaccines for a deadly virus sweeping the planet. As the game progresses and more and more information about the true motivations of both terrorists and UNATCO surface, Denton begins to question his allegiances.<br />
@@ -129,16 +164,29 @@
                                     <span class="asin">B00005V12U</span>
                                 </div>
                                 <div class="medium" id="mediumA390ADD3-3C2B-4A50-B108-BB60BA0F80E8">
-                                    <div class="cover" onclick="showZoomedCover('A390ADD3-3C2B-4A50-B108-BB60BA0F80E8');">
-                                        <img src="images/A390ADD3-3C2B-4A50-B108-BB60BA0F80E8-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B000090OTS?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Dancing Stage MegaMix</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descA390ADD3-3C2B-4A50-B108-BB60BA0F80E8')">
+                                                    <img src="images/A390ADD3-3C2B-4A50-B108-BB60BA0F80E8-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000090OTS?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Dancing Stage MegaMix</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descA390ADD3-3C2B-4A50-B108-BB60BA0F80E8">
                                         <p>Everybody move your feet—it's time for fun: whether you're a beginner, a fanatic or looking for a new exercise routine, Dancing Stage MegaMix, which features tracks by Kylie Minogue, Sugababes, Elvis vs JXL and The Cure, is going to be an enjoyable addition to your PS2 collection.<br />
                                             <br />
                                             There are three modes of play—game, workout and lesson. Game Mode allows you to choose to play the arcade version (one player), a two-player challenge, or for the truly gifted, there's Double-game play—one player, two dance mats. With an incredible choice of tracks and some inspirational cheering ("You're a super dancer!") from the voice-over guy you'll have danced yourself dizzy in no time. Bonuses are awarded for free-style moves, with additional tracks and hidden items unlocked as the game progresses.<br />
@@ -151,16 +199,29 @@
                                     <span class="asin">B000090OTS</span>
                                 </div>
                                 <div class="medium" id="medium3C8488AD-6EE1-4C59-9C84-324C87C21AA5">
-                                    <div class="cover" onclick="showZoomedCover('3C8488AD-6EE1-4C59-9C84-324C87C21AA5');">
-                                        <img src="images/3C8488AD-6EE1-4C59-9C84-324C87C21AA5-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B000065U7S?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">SoulCalibur II (PS2)</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc3C8488AD-6EE1-4C59-9C84-324C87C21AA5')">
+                                                    <img src="images/3C8488AD-6EE1-4C59-9C84-324C87C21AA5-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000065U7S?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">SoulCalibur II (PS2)</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc3C8488AD-6EE1-4C59-9C84-324C87C21AA5">
                                         <p>If the world was a fair place then the name of SoulCalibur—peculiar spelling mistake and all—would be the most famous in beat-'em-up history. Unfortunately, though, the original arcade game was only converted to the Dreamcast (despite the prequel, Soul Blade, being on the PSone), thus dooming it to relative obscurity.<br />
                                             <br />
                                             SoulCalibur's brilliance is not due to any particularly innovative features—it could legitimately be described as simply Tekken with weapons. It's just that it does everything with more panache and imagination than the rest. Instead of awkward, staccato moves, SoulCaliburoffers gloriously flowing, instinctive combos that often leaves you gasping at your own character's athleticism.<br />
@@ -173,50 +234,87 @@
                                     <span class="asin">B000065U7S</span>
                                 </div>
                                 <div class="medium" id="mediumB69446FD-79B2-4457-815C-C4E2F6502707">
-                                    <div class="cover" onclick="showZoomedCover('B69446FD-79B2-4457-815C-C4E2F6502707');">
-                                        <img src="images/B69446FD-79B2-4457-815C-C4E2F6502707-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B0000C1CIL?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Time Crisis 3</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descB69446FD-79B2-4457-815C-C4E2F6502707')">
+                                                    <img src="images/B69446FD-79B2-4457-815C-C4E2F6502707-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0000C1CIL?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Time Crisis 3</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descB69446FD-79B2-4457-815C-C4E2F6502707">
                                         <p></p>
                                     </div>
                                     <!-- End description for Time Crisis 3 -->
                                     <span class="asin">B0000C1CIL</span>
                                 </div>
                                 <div class="medium" id="medium2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3">
-                                    <div class="cover" onclick="showZoomedCover('2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3');">
-                                        <img src="images/2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.com/dp/B0001AVSJQ?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-20&amp;linkCode=xm2" class="title">Unreal Tournament 2004 (Mac)</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3')">
+                                                    <img src="images/2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.com/dp/B0001AVSJQ?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-20&amp;linkCode=xm2" class="title">Unreal Tournament 2004 (Mac)</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc2BC3C751-77DB-4CE3-9B90-B880FFF1DEB3">
                                         <p>Unreal Tournament 2004 - travel a century into the future, where humanity exists only for the sport of alien conquerors. Reload and ride out to the arenas for all-new action and combat! Take warfare to the next level in the amazing new Onslaught mode</p>
                                     </div>
                                     <!-- End description for Unreal Tournament 2004 (Mac) -->
                                     <span class="asin">B0001AVSJQ</span>
                                 </div>
-                            </td>
-                            <td>
                                 <div class="medium" id="medium3135E5AB-82AD-4CA9-9C67-51DB95663AB0">
-                                    <div class="cover" onclick="showZoomedCover('3135E5AB-82AD-4CA9-9C67-51DB95663AB0');">
-                                        <img src="images/3135E5AB-82AD-4CA9-9C67-51DB95663AB0-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B0009RWHTG?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Burnout: Revenge (PS2)</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc3135E5AB-82AD-4CA9-9C67-51DB95663AB0')">
+                                                    <img src="images/3135E5AB-82AD-4CA9-9C67-51DB95663AB0-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0009RWHTG?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Burnout: Revenge (PS2)</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc3135E5AB-82AD-4CA9-9C67-51DB95663AB0">
                                         <p>Even amongst EA's own stable of titles, Burnoutis regarded by many as the best arcade racer of them all and this fourth iteration, subtitled Revenge, looks like being a solid addition to the line. It seems to have wisely realised that the best bit in any of the Burnoutgames is the amount of destruction you can cause as you race and that all that winning a race malarkey is almost a secondary concern.<br />
                                             <br />
                                             A new revenge meter tracks exactly how much damage you cause as you play skittles with traffic and try to cause as big a pile-up as possible—an activity that is encouraged even further in the new Traffic Attack mode. The actual revenge of the title though comes into play when you prang a specific rival one too many times and they start to take a personal interest in seeing your car go up in flames.<br />
@@ -231,64 +329,116 @@
                                     <span class="asin">B0009RWHTG</span>
                                 </div>
                                 <div class="medium" id="medium6B61923E-CF9B-40C5-B7A4-95B88E6E9640">
-                                    <div class="cover" onclick="showZoomedCover('6B61923E-CF9B-40C5-B7A4-95B88E6E9640');">
-                                        <img src="images/6B61923E-CF9B-40C5-B7A4-95B88E6E9640-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B000AXUKJI?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Half-Life 2: Game of the Year Edition (PC DVD)</a>
-                                    <a href="" class="creator"> </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc6B61923E-CF9B-40C5-B7A4-95B88E6E9640')">
+                                                    <img src="images/6B61923E-CF9B-40C5-B7A4-95B88E6E9640-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000AXUKJI?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Half-Life 2: Game of the Year Edition (PC DVD)</a>
+                                                <br />
+                                                <a href="" class="creator"> </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc6B61923E-CF9B-40C5-B7A4-95B88E6E9640">
                                         <p></p>
                                     </div>
                                     <!-- End description for Half-Life 2: Game of the Year Edition (PC DVD) -->
                                     <span class="asin">B000AXUKJI</span>
                                 </div>
                                 <div class="medium" id="medium43C986BC-11EF-45C3-854C-FE7A05438400">
-                                    <div class="cover" onclick="showZoomedCover('43C986BC-11EF-45C3-854C-FE7A05438400');">
-                                        <img src="images/43C986BC-11EF-45C3-854C-FE7A05438400-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B0007D7NXM?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Doom 3: Limited Collector's Edition</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc43C986BC-11EF-45C3-854C-FE7A05438400')">
+                                                    <img src="images/43C986BC-11EF-45C3-854C-FE7A05438400-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0007D7NXM?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Doom 3: Limited Collector's Edition</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc43C986BC-11EF-45C3-854C-FE7A05438400">
                                         <p></p>
                                     </div>
                                     <!-- End description for Doom 3: Limited Collector&apos;s Edition -->
                                     <span class="asin">B0007D7NXM</span>
                                 </div>
                                 <div class="medium" id="mediumB31BDA60-0D67-4D79-8E9A-3C50A3E69EED">
-                                    <div class="cover" onclick="showZoomedCover('B31BDA60-0D67-4D79-8E9A-3C50A3E69EED');">
-                                        <img src="images/B31BDA60-0D67-4D79-8E9A-3C50A3E69EED-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B000X1HZS6?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Guitar Hero III: Legends Of Rock with Wireless Guitar Controller</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descB31BDA60-0D67-4D79-8E9A-3C50A3E69EED')">
+                                                    <img src="images/B31BDA60-0D67-4D79-8E9A-3C50A3E69EED-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000X1HZS6?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Guitar Hero III: Legends Of Rock with Wireless Guitar Controller</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descB31BDA60-0D67-4D79-8E9A-3C50A3E69EED">
                                         <p></p>
                                     </div>
                                     <!-- End description for Guitar Hero III: Legends Of Rock with Wireless Guitar Controller -->
                                     <span class="asin">B000X1HZS6</span>
                                 </div>
                                 <div class="medium" id="mediumAE071FD6-CAD8-4C4B-852B-E30F288831E9">
-                                    <div class="cover" onclick="showZoomedCover('AE071FD6-CAD8-4C4B-852B-E30F288831E9');">
-                                        <img src="images/AE071FD6-CAD8-4C4B-852B-E30F288831E9-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B00140G0VI?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Lego: Indiana Jones</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descAE071FD6-CAD8-4C4B-852B-E30F288831E9')">
+                                                    <img src="images/AE071FD6-CAD8-4C4B-852B-E30F288831E9-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B00140G0VI?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Lego: Indiana Jones</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descAE071FD6-CAD8-4C4B-852B-E30F288831E9">
                                         <p>LEGO Indiana Jones: The Original Adventures takes the fun and creative construction of LEGO and combines it with the wits, daring and non-stop action from the original cinematic adventures that enthralled audiences everywhere (Indiana Jones and the Raiders of the Lost Ark, Indiana Jones and the Temple of Doom and Indiana Jones and the Last Crusade). With a unique tongue-in-cheek take on the original adventures, LEGO Indiana Jones follows Dr. Jones escapades through the jungles of South America to the mountaintops of India. Fans can build, battle and brawl their way through their favourite cinematic moments, from Indys entanglements with snakes to his dashing boulder run.<br />
                                             <br />
                                             Of course, pop cultures most iconic archaeologist will whip through all the classic moments with the help of a host of supporting characters including Marion Ravenwood and Short Round. Players can also mix and match the body parts of more than 60 playable characters to create new heroes just as they could in the best-selling LEGO Star Wars games. Everyones favourite fedora wearing hero returns to theatres this May in Indiana Jones and the Kingdom of the Crystal Skull and families can celebrate the humor and excitement of the original films with LEGO Indiana Jones.Tongue-in-cheek humour presents The Original Adventures in a manner only LEGO can whip up, with comical reinterpretations of classic Indiana Jones scenes and elements.Use Indys signature whip as a multi-purpose tool to attack, disarm, swing across gaps, activate levers and interact with a world of LEGO objects and puzzles.For the first time, LEGO Indy characters are fully immersed in their environment; swim, climb, shimmy across rock ledges and pick up and carry objects.Use a variety of weapons from the environment to fight enemies (e.g., chairs, guns, swords, bottles).Unlock more than 60 playab</p>
@@ -297,36 +447,472 @@
                                     <span class="asin">B00140G0VI</span>
                                 </div>
                                 <div class="medium" id="medium2E7994FA-6472-49CD-B260-6FFE1EBCDF2E">
-                                    <div class="cover" onclick="showZoomedCover('2E7994FA-6472-49CD-B260-6FFE1EBCDF2E');">
-                                        <img src="images/2E7994FA-6472-49CD-B260-6FFE1EBCDF2E-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B001AIPSIA?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Guitar Hero World Tour - Solus</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc2E7994FA-6472-49CD-B260-6FFE1EBCDF2E')">
+                                                    <img src="images/2E7994FA-6472-49CD-B260-6FFE1EBCDF2E-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B001AIPSIA?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Guitar Hero World Tour - Solus</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc2E7994FA-6472-49CD-B260-6FFE1EBCDF2E">
                                         <p></p>
                                     </div>
                                     <!-- End description for Guitar Hero World Tour - Solus -->
                                     <span class="asin">B001AIPSIA</span>
                                 </div>
                                 <div class="medium" id="mediumC0676C8C-4629-4B48-AD9C-C01746D0F6FC">
-                                    <div class="cover" onclick="showZoomedCover('C0676C8C-4629-4B48-AD9C-C01746D0F6FC');">
-                                        <img src="images/C0676C8C-4629-4B48-AD9C-C01746D0F6FC-256.png" alt="" style="max-width: 60px; max-height: 60px" />
-                                    </div>
-                                    <a href="http://www.amazon.co.uk/dp/B0028RXAVE?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Lego Star Wars: Complete Saga - Classics Version</a>
-                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
-                                    <div class="rating"></div>
-                                    <div class="buttons">
-                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
-                                    </div>
-                                    <div class="description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descC0676C8C-4629-4B48-AD9C-C01746D0F6FC')">
+                                                    <img src="images/C0676C8C-4629-4B48-AD9C-C01746D0F6FC-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0028RXAVE?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Lego Star Wars: Complete Saga - Classics Version</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descC0676C8C-4629-4B48-AD9C-C01746D0F6FC">
                                         <p>Over 160 playable, customisable characters including never-before-seen Zam Wessell, Lama Su, Watto, Boss Nass, Captain Tarfals and R5-D4.36 Story Mode levels, spanning all the action of the six Star Wars movies.15 bonus levels.Free Play, Bounty Hunter and Challenge Modes.Two-player "drop-in/drop-out" co-operative play, offline and online.New high-res models and textures for all characters, with normal maps, to set a new visual standard for next-gen LEGO minifigures.Brand new secret unlockables.The "Character Customiser" feature, which enables players to mix-and-match parts from all the characters the collect in the game.Also include: "mini-kit" vehicle play zones, with three new Vehicle Bonus levels - again, one for each of Episode`s I, II, and III.</p>
                                     </div>
                                     <!-- End description for Lego Star Wars: Complete Saga - Classics Version -->
                                     <span class="asin">B0028RXAVE</span>
+                                </div>
+                                <div class="medium" id="mediumD9580917-36FE-4308-BD73-28573C516E5D">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descD9580917-36FE-4308-BD73-28573C516E5D')">
+                                                    <img src="images/D9580917-36FE-4308-BD73-28573C516E5D-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0021AETNQ?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Call of Duty: Modern Warfare 2</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Activision&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Activision  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descD9580917-36FE-4308-BD73-28573C516E5D">
+                                        <p>Modern Warfare 2, the sequel to the Multiplayer Game of the Year winner 'Call Of Duty 4: Modern Warfare', continues the gripping and heart-racing saga with an unprecedented level of action as players face off against a new threat dedicated to bringing the world to the brink of collapse.<br />
+                                            <br />
+                                            Call of Warfare: Stunning cinematic action, including new underwater missions, new gadgets such as the motion detector and new vehicles including snowmobiles and more.Rough guide: Massive globe-spanning adventure sees you travelling to the deserts of Afghanistan, the slums of Rio de Janerio and the wilderness of Russia.Bigger world: New larger levels allow you to tackle missions however you want: will you try a frontal assault or a more stealthy approach from another angle?Special co-op: New Special Forces mode will introduce two player co-operative play for the first time, in a series of non-story missionsBe the best: Competitive multiplayer is even bigger and better than before, with all-new rewards for everyone from raw recruits to the most experienced players.</p>
+                                    </div>
+                                    <!-- End description for Call of Duty: Modern Warfare 2 -->
+                                    <span class="asin">B0021AETNQ</span>
+                                </div>
+                                <div class="medium" id="medium4CF25388-A36E-4B83-8431-5039C45D47A2">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc4CF25388-A36E-4B83-8431-5039C45D47A2')">
+                                                    <img src="images/4CF25388-A36E-4B83-8431-5039C45D47A2-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B001FSJ9NK?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Street Fighter IV</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Capcom&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Capcom  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc4CF25388-A36E-4B83-8431-5039C45D47A2">
+                                        <p>Street Fighter IV brings the legendary fighting series back to its roots by taking the beloved fighting moves and techniques of the original Street Fighter II, and infusing them with Capcom's latest advancements in next-generation technology. Everything that made the legendary Street Fighter II a hit in the arcades, living rooms and dormitories across the globe has been brought back in Street Fighter IV. Players will be able to play their favourite classic characters, such as Ryu, Ken, Chun-Li and Guile, along with new characters, including Crimson Viper, Abel, El Fuerte, and Rufus. Characters and environments are rendered in stylised 3D, while the game is played in the classic Street Fighter 2D perspective with additional 3D camera flourishes. Six-button controls for the game return, with a host of new special moves and features integrated into the gameplay system. Street Fighter IV brings a brand new fighting game to fans the world over. Stylised 3D environments and charactersTraditional "2D" Street Fighter six-button gameplayClassic Street Fighter characters re-imagined for a new generation of gamers, including the original cast of Street Fighter IINew brawlers: female super-spy Crimson Viper, lucha libre wrestler El Fuerte, mixed martial artist Abel and more!New special moves that go beyond any Street Fighter fan's wildest imagination, including Focus Attacks, Super Combos, and the revenge-fueled Ultra Combo systemAmazing locations never seen before in a Street Fighter gameNew gameplay elements provide challenges for both newcomers as well as the most seasoned Street Fighter pro</p>
+                                    </div>
+                                    <!-- End description for Street Fighter IV -->
+                                    <span class="asin">B001FSJ9NK</span>
+                                </div>
+                                <div class="medium" id="mediumB9F15A2A-584F-4B4A-9A0C-CC8B06373591">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descB9F15A2A-584F-4B4A-9A0C-CC8B06373591')">
+                                                    <img src="images/B9F15A2A-584F-4B4A-9A0C-CC8B06373591-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000EP98O0?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Burnout: Revenge</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Electronic%20Arts&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Electronic Arts  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descB9F15A2A-584F-4B4A-9A0C-CC8B06373591">
+                                        <p>This time it's not about winning, it's about an utter disregard for the rules of the road and total domination. This time it's personal. And this time it's on Xbox 360!</p>
+                                    </div>
+                                    <!-- End description for Burnout: Revenge -->
+                                    <span class="asin">B000EP98O0</span>
+                                </div>
+                                <div class="medium" id="medium2A145562-F3C4-4627-A374-CD8F2DB1FB8A">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc2A145562-F3C4-4627-A374-CD8F2DB1FB8A')">
+                                                    <img src="images/2A145562-F3C4-4627-A374-CD8F2DB1FB8A-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000RO349S?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Half-Life 2: The Orange Box</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Electronic%20Arts&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Electronic Arts  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc2A145562-F3C4-4627-A374-CD8F2DB1FB8A">
+                                        <p></p>
+                                    </div>
+                                    <!-- End description for Half-Life 2: The Orange Box -->
+                                    <span class="asin">B000RO349S</span>
+                                </div>
+                                <div class="medium" id="mediumAC3BED23-86F4-46E9-BEDE-FAFC439F6FC6">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descAC3BED23-86F4-46E9-BEDE-FAFC439F6FC6')">
+                                                    <img src="images/AC3BED23-86F4-46E9-BEDE-FAFC439F6FC6-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000I5TL4I?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Burnout Paradise</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Electronic%20Arts&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Electronic Arts  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descAC3BED23-86F4-46E9-BEDE-FAFC439F6FC6">
+                                        <p></p>
+                                    </div>
+                                    <!-- End description for Burnout Paradise -->
+                                    <span class="asin">B000I5TL4I</span>
+                                </div>
+                                <div class="medium" id="mediumE6F999F6-0748-4F18-B645-FB6C6D47521B">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descE6F999F6-0748-4F18-B645-FB6C6D47521B')">
+                                                    <img src="images/E6F999F6-0748-4F18-B645-FB6C6D47521B-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000E87WFO?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Halo 3</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Microsoft&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Microsoft  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descE6F999F6-0748-4F18-B645-FB6C6D47521B">
+                                        <p>The epic saga continues with Halo 3, the hugely anticipated sequel to the highly successful and critically acclaimed Halo franchise. In this third chapter of the Halo trilogy, Master Chief returns to finish the fight, bringing the epic conflict between the Covenant, the Flood, and the entire human race to a dramatic, pulse-pounding climax. Halo 3 represents the third chapter in the Halo trilogy?an international award-winning action series that grew into a global entertainment phenomenon, selling more than 14.5 million units worldwide, logging more than 650 million hours of multiplayer action on Xbox Live, and spawning action figures, books, a graphic novel, apparel, an upcoming film adaptation, and more</p>
+                                    </div>
+                                    <!-- End description for Halo 3 -->
+                                    <span class="asin">B000E87WFO</span>
+                                </div>
+                                <div class="medium" id="medium9EFAE336-C3A9-4321-A099-D057D6219DBF">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc9EFAE336-C3A9-4321-A099-D057D6219DBF')">
+                                                    <img src="images/9EFAE336-C3A9-4321-A099-D057D6219DBF-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0011FI52S?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Gears of War 2</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Microsoft&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Microsoft  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc9EFAE336-C3A9-4321-A099-D057D6219DBF">
+                                        <p>The Locust Horde is back and only you and your squad of elite soldiers stand between them and the death of every human being on the planet Sera. In Gears of War 2, entire cities are being destroyed in single attacks, and you must take the fight to the Locusts by battling them in their own underground lairs.<br />
+                                            You can play the whole of story mode with a friend The Boomer enemies are back in many different varieties The game’s ethos of “destroyed beauty” is still in full effect Shoot the Ticker enemies before they explode in your face<br />
+                                            <br />
+                                            The bestselling third-person shooter is back: bigger, better, and gorier than ever before. But you can't just blast your way through it—this game requires far more tactics and cunning than your usual mindless shooter. A refined cover system means you can use the enemy as “meat shields” as well as hide behind the fully destructible scenery.<br />
+                                            <br />
+                                            The graphics are looking better than ever, and the game is purposefully more bloody and violent than before. The story and characterisation has also been improved, making this an action game sequel with brains as well as brawn. Key FeaturesBrothers in arms: Have a friend join or leave your single player game whenever you want, and even battle together on different difficultly levels.Evolving enemies: You finally get a chance to take down the giant Brumak enemies, as well as even larger monsters and new creatures, such as the explosive Ticker.Practise makes perfect: Practice the multiplayer mode on your own with computer controlled “bots”—then use the new matchmaking system to find a real opponent of the same skill level.Chainsaw massacre: If you loved the chainsaw bayonet in the original game, you now can duel computer or human opponents with gaming’s messiest weapon attachment.Hordes of options: Try the new five-player Horde mode, where you all face off against an unending wave of enemies, or any of the seven other multiplayer modes.About the Developer: Epic Games<br />
+                                            Based in North Carolina, Epic is well known for games such as Unreal Tournament and Gears of War. They also make the Unreal Engine graphics technology, which is used by many other companies in many different games.</p>
+                                    </div>
+                                    <!-- End description for Gears of War 2 -->
+                                    <span class="asin">B0011FI52S</span>
+                                </div>
+                                <div class="medium" id="mediumA4789E04-1941-46CB-9B64-0BB09829F672">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('descA4789E04-1941-46CB-9B64-0BB09829F672')">
+                                                    <img src="images/A4789E04-1941-46CB-9B64-0BB09829F672-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000BB3B36?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Buzz! The Music Quiz</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Sony&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Sony  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="descA4789E04-1941-46CB-9B64-0BB09829F672">
+                                        <p></p>
+                                    </div>
+                                    <!-- End description for Buzz! The Music Quiz -->
+                                    <span class="asin">B000BB3B36</span>
+                                </div>
+                                <div class="medium" id="medium1A92970C-F65C-4349-B031-24BEE8B59BB3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc1A92970C-F65C-4349-B031-24BEE8B59BB3')">
+                                                    <img src="images/1A92970C-F65C-4349-B031-24BEE8B59BB3-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000EAN5F8?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Buzz! The Big Quiz - Solus</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Sony&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Sony  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc1A92970C-F65C-4349-B031-24BEE8B59BB3">
+                                        <p></p>
+                                    </div>
+                                    <!-- End description for Buzz! The Big Quiz - Solus -->
+                                    <span class="asin">B000EAN5F8</span>
+                                </div>
+                                <div class="medium" id="medium869A7587-DBC2-4D25-BD5F-A27DF6E4D11C">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc869A7587-DBC2-4D25-BD5F-A27DF6E4D11C')">
+                                                    <img src="images/869A7587-DBC2-4D25-BD5F-A27DF6E4D11C-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B000HHIMUQ?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Bioshock - Limited Edition [Tin Case]</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Take%202%20Interactive&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Take 2 Interactive  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc869A7587-DBC2-4D25-BD5F-A27DF6E4D11C">
+                                        <p>There aren't many games which list a critique of objectivism as one of its selling points, but then Bioshock isn't like other games. Indeed the only titles it can easily be compared to are System Shock and its sequel, to which this is a spiritual successor. Instead of being set in a derelict space ship though the game's story involves you exploring a mysterious underwater city after a plane crash. The city had been created as an art deco paradise for the intellectual elite but is now in ruins and populated only by grotesque mutants - both physically and mentally.<br />
+                                            <br />
+                                            Although at first sight the game appears to be a first person shoot `em-up it is not primarily an action game. Your goal is survival, not extermination, with ammunition limited and many enemies far more powerful than yourself. You are able to upgrade your abilities though, both physical and psychic, by collecting Adam - the mutagen which was the cause of the disaster in the first place. Even so the best way to defend yourself is to play the creatures and environments against themselves, tricking one group into fighting against another or taking control of security robots and devices.<br />
+                                            <br />
+                                            The game gives you full freedom to play the game exactly as you want, while at the same time creating a living world which carries on with or without you - with many creatures not even bothering to acknowledge you unless you attack them. With stunning graphics, especially the water effects, and an extremely disturbing atmosphere this could well be the most intelligently macabre video game ever made.<br />
+                                            HARRISON DENT</p>
+                                    </div>
+                                    <!-- End description for Bioshock - Limited Edition [Tin Case] -->
+                                    <span class="asin">B000HHIMUQ</span>
+                                </div>
+                                <div class="medium" id="medium00897368-4AD0-4926-8104-A7C7128BB0E6">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc00897368-4AD0-4926-8104-A7C7128BB0E6')">
+                                                    <img src="images/00897368-4AD0-4926-8104-A7C7128BB0E6-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B0026IBHHY?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Borderlands</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Take%202%20Interactive&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Take 2 Interactive  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc00897368-4AD0-4926-8104-A7C7128BB0E6">
+                                        <p>Borderlands sends up to four co-op players to the harsh frontier planet Pandora in search of a mysterious Alien Vault. Featuring unique first-person role-playing shooter gameplay, you'll customise your character as you explore and battle enemies in frantic first-person shooter combat.<br />
+                                            <br />
+                                            And what would a role-playing shooter be without loot? Borderlands groundbreaking content generation system creates a near endless variety of weapons and items to customise your character! Players can join and leave other players' games at any time, or choose to face the challenges of Borderlands alone. All these features combine with a deep, rich fiction and a bold art style to create a breathtaking experience that challenges the conventions of modern shooters... Co-Op Design: Borderlands is built from the ground up to be an exciting, intuitive co-operative experience for up to four players simultaneously that rewards players who work together and invest in co-op skills. Split-screen is also supported.FPS Gameplay: In this role-playing shooter, choose one of four distinct characters, each with their own individual skill sets. As your character grows throughout this fast-paced FPS, you choose and customise your abilities to suit your style of play!Art Style: The distinctive art style combines traditional rendering techniques with hand-drawn textures to paint a bold and eye-catching spin on the FPS genre.Vehicular Combat: Jump behind the wheel and engage in high-speed vehicle-to-vehicle combat, complete with spectacular explosions and road-killed Skags!Frontier Planet: Search the wasteland planet of Pandora for the legendary Alien Vault. Fight your way through bandits, discover nine native (and aggressive) creatures, and help the few settlers on the planet in your search for a Vault rumoured to contain a great prize - if it even exists!</p>
+                                    </div>
+                                    <!-- End description for Borderlands -->
+                                    <span class="asin">B0026IBHHY</span>
+                                </div>
+                                <div class="medium" id="medium9E52D069-1821-4F77-B12D-7B72F7035DF9">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc9E52D069-1821-4F77-B12D-7B72F7035DF9')">
+                                                    <img src="images/9E52D069-1821-4F77-B12D-7B72F7035DF9-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B00023HUP8?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Far Cry Instincts</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Ubisoft&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ubisoft  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-empty.png" alt="-" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc9E52D069-1821-4F77-B12D-7B72F7035DF9">
+                                        <p>In a nutshell:<br />
+                                            Far Cry: Instincts sees you stuck on a gloriously rendered tropical island filled with lush jungle, limpid pools and heavily tooled-up mercenaries. Open-ended encounters offer far more cerebral exercise than your average run-and-gun, as well as the requisite trigger-pumping action. And then you start to discover the islands nasty little secrets…<br />
+                                            <br />
+                                            The lowdown:<br />
+                                            Although the full story mode is not in place yet, the environments, their contents and the sparse but important vehicles point to an exceptionally interesting console conversion of the PC classic. Graphics remain tantalisingly sharp and an underwater swim in one of the island’s many lagoons is exceptionally refreshing.<br />
+                                            <br />
+                                            Most exciting moment:<br />
+                                            So it’s you versus the mercenaries in a straightforward shooting match, right? Wrong. Far Cry has quite a few more tricks up its sleeve…<br />
+                                            <br />
+                                            Since you ask:<br />
+                                            Along with guns, explosives and vehicles, you can also set, bait and quietly observe traps in the undergrowth.<br />
+                                            <br />
+                                            The bottom line:<br />
+                                            If looks could kill, this would be lethal at 10 paces—how the rest fits together, time will tell.<br />
+                                            Nick Gillett</p>
+                                    </div>
+                                    <!-- End description for Far Cry Instincts -->
+                                    <span class="asin">B00023HUP8</span>
+                                </div>
+                                <div class="medium" id="medium30156FC5-D446-45E7-9578-E4B4A6C928C9">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="#" onclick="toggle('desc30156FC5-D446-45E7-9578-E4B4A6C928C9')">
+                                                    <img src="images/30156FC5-D446-45E7-9578-E4B4A6C928C9-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="http://www.amazon.co.uk/dp/B001TK3DNG?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Assassin's Creed II</a>
+                                                <br />
+                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=videogames&amp;field-manufacturer=Ubisoft&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ubisoft  </a>
+                                                <div class="rating">
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-filled.png" alt="*" />
+                                                    <img src="images/star-half.png" alt="~" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="buttons"></div>
+                                    <div class="description" style="display:none;" id="desc30156FC5-D446-45E7-9578-E4B4A6C928C9">
+                                        <p>Renaissance Italy isn't the usual sort of setting for a video game, but then Assassin's Creed isn't one to play by the rules. Ezio Auditore di Firenze is yet another ancestor of modern day Desmond Miles - a nobleman out to avenge the death of his family in the guise of a shadowy assassin.<br />
+                                            <br />
+                                            Like the last game you're given total freedom to explore multiple cities, but with greatly improved parkour skills and the new ability to swim. There's also a lot more variety in the missions you undertake - the main complaint with the original game- so you'll never feel you're just doing the same tasks over and over again.<br />
+                                            <br />
+                                            Combat has also been completely overhauled, with dozens of different weapons and a new health system. With no less than Leonardo da Vinci acting as your very own Q style gadget master this stunning sequel improves on every element of the original. Renaissance man: Play as an all-new character in 15th century Italy, with new abilities, new weapons and a whole new world to explore.The spice of life: Massively improved mission variety, with new freeform mission structures and many more random events.Tools of the trade: All-new combat system lets you steal weapons from your opponents, use dual hidden blades and even an early form of pistol.Real history: Meet historical figures such as Leonardo da Vinci, Niccol Machiavelli and Lorenzo de' Medici, all of whom can offer you their own unique brand of aid.Tourist spots: Explore real world locations including Rome, Venice, Florence and Tuscany, as well as specific landmarks such as the Grand Canal and St Mark's Basilica.</p>
+                                    </div>
+                                    <!-- End description for Assassin&apos;s Creed II -->
+                                    <span class="asin">B001TK3DNG</span>
                                 </div>
                             </td>
                         </tr>
@@ -335,7 +921,7 @@
                 <!-- End media -->
                 <hr style="margin-top: 6pt" />
                 <div class="navigation">
-                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> <a class="page" href="videogames-2.html">2</a> </span><a class="arrow right" href="videogames-2.html">&nbsp;&nbsp;&nbsp;</a> 
+                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
 </div>
                 </div>
                 <!-- End navigation -->
@@ -348,7 +934,7 @@
             <a href="http://www.delicious-monster.com">
                 <img src="images/monster.png" alt="" />
                  Made with Delicious Library</a>
-            <p>Springfield, State zipflap congrotus delicious library Clancy, Liam
+            <p style="display:none">Springfield, State zipflap congrotus delicious library Clancy, Liam
 </p>
         </div>
         <!-- End footer -->
