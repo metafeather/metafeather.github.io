@@ -7,6 +7,7 @@
     {{ page.date | date_to_string }}
   </abbr> 
   {% if page.author %}
+    by 
     <span class="vcard name author">
       <a href="/about/" class="url fn n uid" title="About {{ page.author }}">
         {{ page.author }}

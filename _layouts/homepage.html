@@ -5,7 +5,7 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="user-scalable=yes">
 	<title>{{ page.title }} - metafeather's blog</title>
-  <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="jshub.org Blog" type="application/atom+xml" />
+  <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="Metafeather Blog" type="application/atom+xml" />
   {% include yui3.html %} 
   {% include stylesheets.html %} 
   <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
@@ -37,7 +37,15 @@
         </div><!-- col1 -->
       </div><!-- yui-main -->
       <div class="yui-b col2 sidebar">
-            
+        
+        <div class="featured">
+          <a href="http://www.openrightsgroup.org/">
+            <img src="http://widgets.openrightsgroup.org/founding1000/founding-fun/524320.png" alt="ORG Founding funder. Funding founder. Fun!" />
+          </a>
+        </div>
+        
+        <hr />
+        
         {% case page.feature %}
         {% when 'core' %}
         {% include blog/featured_projects_core.html %}
