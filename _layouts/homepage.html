@@ -43,13 +43,8 @@
       </div><!-- yui-main -->
       <div class="yui-b col2 sidebar">
         
-        <div class="featured">
-          <a href="http://www.openrightsgroup.org/">
-            <img src="http://widgets.openrightsgroup.org/founding1000/founding-fun/524320.png" alt="ORG Founding funder. Funding founder. Fun!" />
-          </a>
-        </div>
-        
-        <hr />
+        {% include flickr.html %}
+        {% include org.html %}
         
         {% case page.feature %}
         {% when 'core' %}
