@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -8,55 +7,56 @@
 
   <!-- ref: http://blog.stackoverflow.com/2009/01/using-your-own-url-as-your-openid/ -->
   <link rel="openid.server" href="https://www.myopenid.com/server">
-  <link rel="openid.delegate" href="https://metafeather.myopenid.com/">  
+  <link rel="openid.delegate" href="https://metafeather.myopenid.com/">
 
   <link href="http://metafeather.net/rss/blog/atom.xml" rel="alternate" title="Metafeather Blog" type="application/atom+xml" />
-  {% include yui3.html %} 
-  {% include stylesheets.html %} 
+  {% include yui3.html %}
+  {% include stylesheets.html %}
+  {% include javascripts.html %}
   <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
   <link rel="stylesheet" href="/stylesheets/post.css" type="text/css" />
   <link rel="stylesheet" href="/stylesheets/home.css" type="text/css" />
-  {% include syntaxhighlighter.html %}   
-  {% include blog/runcoderun.html %}
 </head>
 <body class="mf home blog yui-cssreset yui-cssfonts yui-cssgrids yui-cssbase">
   {% include hpage.html %}
   {% include banner.html %}
 
-  <div class="yui-d-custom post 
+  <div class="yui-d-custom post
     {% for cat in page.categories %}
       {{ cat | prepend: ' category_' }}
     {% endfor %}
   ">
-  
+
     <div class="yui-t4 content">
       <div class="yui-main">
         <div class="yui-b col1">
-          
+
           <div class="wrapper">
-          
+
           {{ content }}
 
           </div><!-- wrapper -->
-  
+
         </div><!-- col1 -->
       </div><!-- yui-main -->
       <div class="yui-b col2 sidebar">
-        
+
         {% include flickr.html %}
         {% include org.html %}
-        
+
         {% case page.feature %}
         {% when 'core' %}
         {% include blog/featured_projects_core.html %}
+        {% when 'github' %}
+        {% include blog/featured_projects_github.html %}
         {% endcase %}
-                
-        <hr />
-        
-        {% include blog/search.html %}      
 
         <hr />
-        
+
+        {% include blog/search.html %}
+
+        <hr />
+
       </div><!-- col2 -->
     </div><!-- content -->
     <div class="yui-gb extra-content">

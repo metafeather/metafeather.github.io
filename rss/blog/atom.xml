@@ -3,12 +3,12 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
  <title>Metafeather's Blog</title>
  <link href="http://metafeather.net/blog/atom.xml" rel="self" />
  <link href="http://metafeather.net/" />
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://jshub.org/</id>
+ <id>http://metafeather.net/</id>
  <author>
    <name>Liam Clancy</name>
    <email>metafeather@metafeather.net</email>
@@ -23,5 +23,5 @@ layout: nil
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
- 
+
 </feed>
