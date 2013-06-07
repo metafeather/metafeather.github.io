@@ -13,12 +13,14 @@ jQuery.fn.loadRepositories = function(username, options, tOptions) {
   this.html("<span>Querying GitHub for repositories...</span>");
 
   function githubUser(username, callback) {
-    jQuery.getJSON("http://github.com/api/v1/json/" + username + "?callback=?", callback);
+    //jQuery.getJSON("http://github.com/api/v1/json/" + username + "?callback=?", callback);
+    jQuery.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
   };
 
   var target = this;
   githubUser(username, function(data) {
-    var repos = data.user.repositories;
+    //var repos = data.user.repositories;
+    var repos = data.data;
     repos = filter(repos);
     sortByNumberOfWatchers(repos);
 
