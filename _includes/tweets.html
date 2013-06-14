@@ -1,26 +1,9 @@
-<!-- JS include recent tweets -->
-<div class="tweet"><!-- placeholder --></div>
-<script src="/javascripts/tweet/jquery.tweet.js" type="text/javascript"><!-- tweet.js --></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".tweet").tweet({
-            username: "metafeather",
-            join_text: "auto",
-            avatar_size: 0,
-            count: 10,
-            auto_join_text_default: "I said,",
-            auto_join_text_ed: "I",
-            auto_join_text_ing: "I was",
-            auto_join_text_reply: "I replied to",
-            auto_join_text_url: "I was checking out",
-            loading_text: "loading tweets..."
-        });
-    });
-</script>
-<style type="text/css">
-  .tweet ul {
-    list-style-type: none;
-    margin: 0 0 1em;
-    padding: 0;
-  }
-</style>
+<!-- JS include recent tweets https://dev.twitter.com/docs/embedded-timelines -->
+<a class="twitter-timeline"
+  href="https://twitter.com/metafeather"
+  data-dnt="true"
+  data-widget-id="345469074316337152"
+  data-tweet-limit="3"
+  data-chrome="noheader nofooter noborders transparent"
+>Tweets by @metafeather</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
