@@ -1,42 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="media-per-column" content="2800" />
-        <meta name="columns-per-page" content="1" />
+        <meta name="media-per-column" content="7" />
+        <meta name="columns-per-page" content="2" />
+        <script type="text/javascript">        if (!!navigator.userAgent.match(/iP*.*Mobile.*Safari/))
+            window.location.pathname = window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/iphone/index.html";
+    </script>
         <title>Library</title>
-        <style type="text/css">body {
-        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
-}
-td {
-        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
-}
-a {
-        font: 12px Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
-}
-.asin {display:none;}
-.description {display:none;}
-</style>
-        <script language="javascript" type="text/javascript">function toggle(dDiv) {
-        var theDiv = document.getElementById(dDiv);
-        theDiv.style.display = theDiv.style.display == 'none' ? 'inline' : 'none';
-}
-</script>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="animator.js" type="text/javascript"></script>
+        <script src="prototype.js" type="text/javascript"></script>
+        <script src="effects.js" type="text/javascript"></script>
+        <script src="dragdrop.js" type="text/javascript"></script>
+        <script src="library.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header">
             <div id="header_main">
                 <div id="collection_info">
-                    <div id="user"></div>
-                    <div id="username">Liam Clancy Library
+                    <div id="user">
+                        <img src="images/E5551FAF-4ACA-45CF-9D1B-E3F84A70A7A9.png" alt="" />
+                    </div>
+                    <div id="username">Liam Clancy
 </div>
                     <div id="stats">
-                        <div id="total">Collection Total: <span style="font-weight: bold">1504 Items</span>
+                        <div id="total">Collection Total:<br />
+                            <span style="font-weight: bold">2121 Items</span>
                             
 </div>
-                        <div id="updated">Last Updated: <span style="font-weight: bold">Jan 14, 2011</span>
+                        <div id="updated">Last Updated:<br />
+                            <span style="font-weight: bold">Aug 4, 2013</span>
                             
 </div>
                     </div>
@@ -51,157 +47,100 @@ a {
                 <div class="navigation">
                     <div class="shelf">
                         <span class="label">Shelf:</span>
-                        <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >Books</option><option value="movies.html" >Movies</option><option value="music.html" >Music</option><option value="videogames.html" >Videogames</option><option value="coffeetable.html" >Coffee Table</option><option value="donated.html" >Donated</option><option value="fiction.html" >Fiction</option><option value="otherpeoples.html" >Other Peoples</option><option value="reference.html" >Reference</option><option value="touchclarity.html" >Touch Clarity</option><option value="travel.html" >Travel</option><option value="recentlyadded.html" >Recently Added</option><option value="toread.html" selected="selected">To read</option></select>
+                        <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >Books</option><option value="movies.html" >Movies</option><option value="music.html" >Music</option><option value="videogames.html" >Videogames</option><option value="coffeetable.html" >Coffee Table</option><option value="donated.html" >Donated</option><option value="reference.html" >Reference</option><option value="sold.html" >Sold</option><option value="touchclarity.html" >Touch Clarity</option><option value="travel.html" >Travel</option><option value="allfiction.html" >All Fiction</option><option value="recentlyadded.html" >Recently Added</option><option value="toread.html" selected="selected">To read</option></select>
 </div>
-                    <div class="crumbs">Page: <span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
+                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> <a class="page" href="toread-2.html">2</a> </span><a class="arrow right" href="toread-2.html">&nbsp;&nbsp;&nbsp;</a> 
 </div>
                 </div>
                 <!-- End navigation -->
                 <hr />
                 <div id="media">
+                    <div id="zoom">
+                        <div class="closebox" onclick="this.parentNode.style.visibility = 'hidden';"></div>
+                        <a id="zoom_link" href="#" name="zoom_link">
+                            <img id="zoom_image" src="" alt="" />
+                        </a>
+                    </div>
+                    <script type="text/javascript" charset="utf-8">                new Draggable('zoom', {});
+            </script>
                     <table>
 <tr>
                             <td>
-                                <div class="medium" id="mediumAEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descAEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9')">
-                                                    <img src="images/AEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0099884801?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Maps in a Mirror: Volume 2</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Orson%20Scott%20Card&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Orson Scott Card  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descAEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Maps in a Mirror: Volume 2 -->
-                                    <span class="asin">0099884801</span>
-                                </div>
                                 <div class="medium" id="mediumB910BA79-C49A-4778-9AE3-72D277AD02E3">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descB910BA79-C49A-4778-9AE3-72D277AD02E3')">
-                                                    <img src="images/B910BA79-C49A-4778-9AE3-72D277AD02E3-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0099884704?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Maps in a Mirror: v. 1</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Orson%20Scott%20Card&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Orson Scott Card  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descB910BA79-C49A-4778-9AE3-72D277AD02E3">
+                                    <div class="cover" onclick="showZoomedCover('B910BA79-C49A-4778-9AE3-72D277AD02E3');">
+                                        <img src="images/B910BA79-C49A-4778-9AE3-72D277AD02E3-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0099884704?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Maps in a Mirror: v. 1</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Orson%20Scott%20Card&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Orson Scott Card  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for Maps in a Mirror: v. 1 -->
                                     <span class="asin">0099884704</span>
                                 </div>
+                                <div class="medium" id="mediumAEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9">
+                                    <div class="cover" onclick="showZoomedCover('AEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9');">
+                                        <img src="images/AEB7C3E5-5D7E-4FFB-BD9A-0EF4C0EA73C9-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0099884801?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Maps in a Mirror: Volume 2</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Orson%20Scott%20Card&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Orson Scott Card  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                    <!-- End description for Maps in a Mirror: Volume 2 -->
+                                    <span class="asin">0099884801</span>
+                                </div>
                                 <div class="medium" id="mediumEE1201C1-7A39-4487-8FC6-5283EC1B320D">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descEE1201C1-7A39-4487-8FC6-5283EC1B320D')">
-                                                    <img src="images/EE1201C1-7A39-4487-8FC6-5283EC1B320D-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857989376?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Pavane (Millennium SF Masterworks S)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Keith%20Roberts&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Keith Roberts  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descEE1201C1-7A39-4487-8FC6-5283EC1B320D">
+                                    <div class="cover" onclick="showZoomedCover('EE1201C1-7A39-4487-8FC6-5283EC1B320D');">
+                                        <img src="images/EE1201C1-7A39-4487-8FC6-5283EC1B320D-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1857989376?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Pavane (Millennium SF Masterworks S)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Keith%20Roberts&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Keith Roberts  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for Pavane (Millennium SF Masterworks S) -->
                                     <span class="asin">1857989376</span>
                                 </div>
                                 <div class="medium" id="mediumB421BC55-96B3-45A1-BD70-8EC4B2DBB2EE">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descB421BC55-96B3-45A1-BD70-8EC4B2DBB2EE')">
-                                                    <img src="images/B421BC55-96B3-45A1-BD70-8EC4B2DBB2EE-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/185798806X?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Last and First Men (S.F.Masterworks S.)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Olaf%20Stapledon&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Olaf Stapledon  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descB421BC55-96B3-45A1-BD70-8EC4B2DBB2EE">
+                                    <div class="cover" onclick="showZoomedCover('B421BC55-96B3-45A1-BD70-8EC4B2DBB2EE');">
+                                        <img src="images/B421BC55-96B3-45A1-BD70-8EC4B2DBB2EE-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/185798806X?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Last and First Men (S.F.Masterworks S.)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Olaf%20Stapledon&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Olaf Stapledon  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p>Olaf Stapledon's first novel Last and First Men, published in 1930, has sometimes been called science fiction's Bible—a sweeping, exhilarating history of humanity's future. Its awesome timescale, stretching across five billion years, was an inspiration to the young Arthur C. Clarke, who later wrote: "No book before or since ever had such an impact on my imagination." However, Last and First Menshould come with a health warning: The early chapters, dealing with near-future politics from the viewpoint of 1930, are mired in dodgy short-term speculation and have dated badly. Soon Stapledon rings down the curtain on us "First Men" as an uncontrolled nuclear reaction sweeps the world and boils the oceans—and now his imagination takes flight. The Second Men are plagued with invasions of cloud-like Martians; the bat-eared, six-fingered Third Men deliberately create the Fourth Men who are essentially huge, immobile brains ... and so on through ever-vaster gulfs of time. Individuals, nations, civilizations, even species are evocatively shown as mayflies flickering in and out of existence in an immense, chilly cosmos that goes uncaringly on forever. Yet it's not a gloomy work: even as the dying Sun promises to become their funeral pyre, the Last Men affirm that "It is very good to have been man." Another classic choice from Millennium SF Masterworks. —David Langford</p>
                                     </div>
                                     <!-- End description for Last and First Men (S.F.Masterworks S.) -->
                                     <span class="asin">185798806X</span>
                                 </div>
                                 <div class="medium" id="medium47E818C1-5ABE-479B-82DB-F1ECFD69D5E6">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc47E818C1-5ABE-479B-82DB-F1ECFD69D5E6')">
-                                                    <img src="images/47E818C1-5ABE-479B-82DB-F1ECFD69D5E6-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857988078?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Star Maker (Millennium SF Masterworks S)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Olaf%20Stapledon&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Olaf Stapledon  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc47E818C1-5ABE-479B-82DB-F1ECFD69D5E6">
+                                    <div class="cover" onclick="showZoomedCover('47E818C1-5ABE-479B-82DB-F1ECFD69D5E6');">
+                                        <img src="images/47E818C1-5ABE-479B-82DB-F1ECFD69D5E6-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1857988078?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Star Maker (Millennium SF Masterworks S)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Olaf%20Stapledon&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Olaf Stapledon  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p>Brian Aldiss calls this 1937 SF classic "the most wonderful novel I have ever read", and its Millennium Masterworks reissue adds admiring remarks by Jorge Luis Borges, Arthur C Clarke, Doris Lessing, Virginia Woolf among others. Olaf Stapledon is better known for Last and First Men (1930), a sweeping history of the future whose early chapters are now embarrassing—but Star Maker leaps straight into a unfurling vision of infinity.<br />
                                             <br />
                                             Looking at the starry night from an English hillside, the unnamed narrator is snatched from his earthly body and flung through space at impossible acceleration, soon outstripping light. He visits other stars, sees other worlds and alien races, a gallery of SF marvels in documentary rather than story form. (Some of this now seems over-familiar, however fresh and new in 1937: the book drags a little here.) Fellow disembodied intelligences from the galactic community join our hero, sensing something beyond mere matter and energy:<br />
@@ -214,29 +153,16 @@ a {
                                     <span class="asin">1857988078</span>
                                 </div>
                                 <div class="medium" id="medium3BB867F5-763D-45B2-8A43-8FB1FC08355F">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc3BB867F5-763D-45B2-8A43-8FB1FC08355F')">
-                                                    <img src="images/3BB867F5-763D-45B2-8A43-8FB1FC08355F-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857989775?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Book of the New Sun: Shadow and Claw Vol 1 (Fantasy Masterworks)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Gene%20Wolfe&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Gene Wolfe  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc3BB867F5-763D-45B2-8A43-8FB1FC08355F">
+                                    <div class="cover" onclick="showZoomedCover('3BB867F5-763D-45B2-8A43-8FB1FC08355F');">
+                                        <img src="images/3BB867F5-763D-45B2-8A43-8FB1FC08355F-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1857989775?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Book of the New Sun: Shadow and Claw Vol 1 (Fantasy Masterworks)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Gene%20Wolfe&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Gene Wolfe  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p>One of the most acclaimed "science fantasies" ever, Gene Wolfe's The Book of the New Sun(1980-83) is a long, magical novel in four volumes. Shadow and Clawcontains the first two, The Shadow of the Torturerand The Claw of the Conciliator, which respectively won the World Fantasy and Nebula awards.<br />
                                             <br />
                                             This is the first-person narrative of Severian the lowly apprentice torturer, blessed and cursed with a photographic memory, whose travels lead him through the marvels of far-future "Urth", and who—as revealed near the beginning—eventually becomes his land's sole ruler or Autarch. On the surface it's a colourful story with all the classic ingredients: growing up, adventure, sex, betrayal, murder, exile, battle, monsters and mysteries to be solved. (Only well into book two do we realise what saved Severian's life in chapter one.) For lovers of literary allusions, they're here in plenty: a Dickensian cemetery scene, a torture-engine from Kafka, a wonderful library out of Borges and familiar fables changed by aeons of retelling. Wolfe evokes a chilly sense of time's vastness, with an age-old, much restored painting of a golden-visored "knight" who is an astronaut standing on the Moon; an ancient citadel of metal towers which are grounded spacecraft. Even the Sun is senile and dying, and so Urth needs a New Sun.<br />
@@ -247,29 +173,16 @@ a {
                                     <span class="asin">1857989775</span>
                                 </div>
                                 <div class="medium" id="mediumCE85E622-576B-4232-BF20-130862A18E72">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descCE85E622-576B-4232-BF20-130862A18E72')">
-                                                    <img src="images/CE85E622-576B-4232-BF20-130862A18E72-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857987004?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Book of the New Sun: Sword and Citadel Vol 2 (Millennium Fantasy Masterworks)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Gene%20Wolfe&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Gene Wolfe  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descCE85E622-576B-4232-BF20-130862A18E72">
+                                    <div class="cover" onclick="showZoomedCover('CE85E622-576B-4232-BF20-130862A18E72');">
+                                        <img src="images/CE85E622-576B-4232-BF20-130862A18E72-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1857987004?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Book of the New Sun: Sword and Citadel Vol 2 (Millennium Fantasy Masterworks)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Gene%20Wolfe&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Gene Wolfe  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p>One of the most acclaimed "science fantasies" ever, Gene Wolfe's The Book of the New Sun (1980-83) is a long, magical novel in four volumes. Shadow and Claw contains the first two, The Shadow of the Torturer and The Claw of the Conciliator, which respectively won the World Fantasy and Nebula awards.<br />
                                             <br />
                                             This is the first-person narrative of Severian the lowly apprentice torturer, blessed and cursed with a photographic memory, whose travels lead him through the marvels of far-future "Urth", and who—as revealed near the beginning—eventually becomes his land's sole ruler or Autarch. On the surface it's a colourful story with all the classic ingredients: growing up, adventure, sex, betrayal, murder, exile, battle, monsters and mysteries to be solved. (Only well into book two do we realise what saved Severian's life in chapter one.) For lovers of literary allusions, they're here in plenty: a Dickensian cemetery scene, a torture-engine from Kafka, a wonderful library out of Borges and familiar fables changed by aeons of retelling. Wolfe evokes a chilly sense of time's vastness, with an age-old, much restored painting of a golden-visored "knight" who is an astronaut standing on the Moon; an ancient citadel of metal towers which are grounded spacecraft. Even the Sun is senile and dying, and so Urth needs a New Sun.<br />
@@ -279,619 +192,119 @@ a {
                                     <!-- End description for The Book of the New Sun: Sword and Citadel Vol 2 (Millennium Fantasy Masterworks) -->
                                     <span class="asin">1857987004</span>
                                 </div>
+                            </td>
+                            <td>
                                 <div class="medium" id="mediumD25CD029-1278-4551-BCC1-640F89E5B3DC">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descD25CD029-1278-4551-BCC1-640F89E5B3DC')">
-                                                    <img src="images/D25CD029-1278-4551-BCC1-640F89E5B3DC-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1844164160?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Soul Drinker's Omnibus (Warhammer 40, 000)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ben%20Counter&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ben Counter  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descD25CD029-1278-4551-BCC1-640F89E5B3DC">
+                                    <div class="cover" onclick="showZoomedCover('D25CD029-1278-4551-BCC1-640F89E5B3DC');">
+                                        <img src="images/D25CD029-1278-4551-BCC1-640F89E5B3DC-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1844164160?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Soul Drinker's Omnibus (Warhammer 40, 000)</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ben%20Counter&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ben Counter  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Soul Drinker&apos;s Omnibus (Warhammer 40, 000) -->
                                     <span class="asin">1844164160</span>
                                 </div>
-                                <div class="medium" id="medium42064643-1FA3-48A0-9175-7E929F9A7A7E">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc42064643-1FA3-48A0-9175-7E929F9A7A7E')">
-                                                    <img src="images/42064643-1FA3-48A0-9175-7E929F9A7A7E-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0340837950?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Stranger in a Strange Land</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Robert%20A.%20Heinlein&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Robert A. Heinlein  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc42064643-1FA3-48A0-9175-7E929F9A7A7E">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Stranger in a Strange Land -->
-                                    <span class="asin">0340837950</span>
-                                </div>
-                                <div class="medium" id="medium8744E29C-79F8-43F0-8EFF-7DDE4918648E">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc8744E29C-79F8-43F0-8EFF-7DDE4918648E')">
-                                                    <img src="images/8744E29C-79F8-43F0-8EFF-7DDE4918648E-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0575076526?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Woken Furies (Gollancz)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Richard%20Morgan&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Richard Morgan  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc8744E29C-79F8-43F0-8EFF-7DDE4918648E">
-                                        <p>Woken Furiesis Richard Morgan's third noirSF adventure starring combat veteran Takeshi Kovacs, who debuted in Altered Carbon(2002; winner of the Philip K. Dick Award). Kovacs operates in an interstellar future of extreme violence and exotic weaponry, where swapping bodies is as easy as trading in an old car.<br />
-                                            <br />
-                                            The setting is Harlan's World, 95% ocean, where ancient alien orbital systems still vaporize anything that flies too high. Kovacs, older and madder, is running a private vendetta against Taliban-like fundamentalists whose principles—in a world where death is reversible—forced an old girl-friend and her child to die permanently. Wounded and on the run as usual, he escapes by joining a "deCom" squad hunting down human-built weapons systems that don't want to be decommissioned. Soon he's entangled with a woman who (some of the time) seemsto be a reincarnation of long-dead revolutionary leader Quellcrist Falconer…<br />
-                                            <br />
-                                            Meanwhile, the dictatorial ruling family of Harlan's World has set the deadliest possible assassin on Kovacs' trail—an illegal copy of his younger self, in a brand-new body.<br />
-                                            <br />
-                                            High-energy complications follow. There's unexpected violence in a virtual-reality monastery. Kovacs and "Quellist" sympathizers plan a crazy James Bond assault on an impregnable island fortress, an attack that ends in a surprise twist. The idealistic Quellcrist (if that's who she is) has the key to a genetic time-bomb never before used: "A whole new form of death." Even those implacable orbital weapons that smite high-fliers with "angelfire" have secrets of their own.<br />
-                                            <br />
-                                            Morgan's knack for grisly set-pieces and heart-stopping violence makes for compulsive reading—emphatically not for the squeamish. Against all odds, his fast-moving choreography of pursuits, escapes, shoot-outs, reversals and betrayals finally ends in a satisfying touch of compassion, a trace of hope. A superior SF thriller. —David Langford</p>
-                                    </div>
-                                    <!-- End description for Woken Furies (Gollancz) -->
-                                    <span class="asin">0575076526</span>
-                                </div>
                                 <div class="medium" id="medium16B48A7A-AF83-4F7A-A46C-CF8D528A39BB">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc16B48A7A-AF83-4F7A-A46C-CF8D528A39BB')">
-                                                    <img src="images/16B48A7A-AF83-4F7A-A46C-CF8D528A39BB-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0340921994?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Mission Song</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=John%20Le%20Carre&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">John Le Carre  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc16B48A7A-AF83-4F7A-A46C-CF8D528A39BB">
+                                    <div class="cover" onclick="showZoomedCover('16B48A7A-AF83-4F7A-A46C-CF8D528A39BB');">
+                                        <img src="images/16B48A7A-AF83-4F7A-A46C-CF8D528A39BB-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0340921994?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Mission Song</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=John%20Le%20Carre&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">John Le Carre  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Mission Song -->
                                     <span class="asin">0340921994</span>
                                 </div>
-                                <div class="medium" id="mediumDCACBD69-B97B-4207-96ED-204B82DA2D96">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descDCACBD69-B97B-4207-96ED-204B82DA2D96')">
-                                                    <img src="images/DCACBD69-B97B-4207-96ED-204B82DA2D96-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0099458195?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Point Counter Point (Vintage Classic)</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Aldous%20Huxley&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Aldous Huxley  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descDCACBD69-B97B-4207-96ED-204B82DA2D96">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Point Counter Point (Vintage Classic) -->
-                                    <span class="asin">0099458195</span>
-                                </div>
                                 <div class="medium" id="medium255EACA2-85D5-4E9E-B246-9C3497CBF884">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc255EACA2-85D5-4E9E-B246-9C3497CBF884')">
-                                                    <img src="images/255EACA2-85D5-4E9E-B246-9C3497CBF884-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0141188936?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Atlas Shrugged</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ayn%20Rand&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ayn Rand  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc255EACA2-85D5-4E9E-B246-9C3497CBF884">
+                                    <div class="cover" onclick="showZoomedCover('255EACA2-85D5-4E9E-B246-9C3497CBF884');">
+                                        <img src="images/255EACA2-85D5-4E9E-B246-9C3497CBF884-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0141188936?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Atlas Shrugged</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ayn%20Rand&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ayn Rand  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for Atlas Shrugged -->
                                     <span class="asin">0141188936</span>
                                 </div>
                                 <div class="medium" id="mediumF5743094-6D76-4906-AF58-CDB525E698DE">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descF5743094-6D76-4906-AF58-CDB525E698DE')">
-                                                    <img src="images/F5743094-6D76-4906-AF58-CDB525E698DE-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0141188626?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Fountainhead</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ayn%20Rand&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ayn Rand  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descF5743094-6D76-4906-AF58-CDB525E698DE">
+                                    <div class="cover" onclick="showZoomedCover('F5743094-6D76-4906-AF58-CDB525E698DE');">
+                                        <img src="images/F5743094-6D76-4906-AF58-CDB525E698DE-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0141188626?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Fountainhead</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Ayn%20Rand&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Ayn Rand  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for The Fountainhead -->
                                     <span class="asin">0141188626</span>
                                 </div>
                                 <div class="medium" id="medium8FC3C148-4BB4-49F9-8EC9-DA129151887C">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc8FC3C148-4BB4-49F9-8EC9-DA129151887C')">
-                                                    <img src="images/8FC3C148-4BB4-49F9-8EC9-DA129151887C-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1604240733?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Anthem</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Rand%20Ayn&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Rand Ayn  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc8FC3C148-4BB4-49F9-8EC9-DA129151887C">
+                                    <div class="cover" onclick="showZoomedCover('8FC3C148-4BB4-49F9-8EC9-DA129151887C');">
+                                        <img src="images/8FC3C148-4BB4-49F9-8EC9-DA129151887C-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1604240733?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Anthem</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Rand%20Ayn&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Rand Ayn  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for Anthem -->
                                     <span class="asin">1604240733</span>
                                 </div>
-                                <div class="medium" id="mediumE94E43DD-110F-463E-A412-4DA72C41D26A">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descE94E43DD-110F-463E-A412-4DA72C41D26A')">
-                                                    <img src="images/E94E43DD-110F-463E-A412-4DA72C41D26A-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0747232725?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Midnight</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Dean%20Koontz&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Dean Koontz  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descE94E43DD-110F-463E-A412-4DA72C41D26A">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Midnight -->
-                                    <span class="asin">0747232725</span>
-                                </div>
-                                <div class="medium" id="medium674AD992-A015-40F1-ACF5-AD9DAD88F20C">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc674AD992-A015-40F1-ACF5-AD9DAD88F20C')">
-                                                    <img src="images/674AD992-A015-40F1-ACF5-AD9DAD88F20C-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0755322819?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">American Gods</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Neil%20Gaiman&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Neil Gaiman  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc674AD992-A015-40F1-ACF5-AD9DAD88F20C">
-                                        <p>Within just a few pages of Neil Gaiman's novel American Gods, he commandingly reveals that he is at his considerable best with this disturbing and dark journey into the hidden soul of America. Gaiman, one of the most talented and imaginative writers at work today, achieved nigh-legendary status with his comic Sandman, which took the genre to heights that even the equally talented Alan Moore had not attained; Gaiman's subsequent career as a novelist has displayed the same glittering inventiveness and exquisite use of language.<br />
-                                            <br />
-                                            Gaiman's protagonist Shadow has patiently done his time in prison. But as the moment of his release approaches, he begins to sense that some unnamed disaster is lying in wait for him. As he makes his way home, he encounters the mysterious Mr Wednesday, who appears to be both a refugee from a distant country at war and the King of America. And perhaps even a god. As Shadow and Mr Wednesday begin a bizarre odyssey across the United States, solving murders is only one of their accomplishments. With an epic storm of supernatural origin brewing, one questions whether they will be destroyed before Shadow pays the price for grim mistakes in his past.<br />
-                                            <br />
-                                            The use of language here is impeccable, and it is wedded to a surreal narrative that brings out the most quirky and unsettling aspects of Gaiman's imagination. Forget Gaiman the Guru: just enjoy Gaiman the consummate writer: He opened his mouth to catch the rain as it fell, moistening his cracked lips and his dry tongue, wetting the ropes that bound him to the trunk of the tree. There was a flash of lightning so bright it fell like a blow to his eyes, transforming the world into an intense panorama of image and after-image. The wind tugged at Shadow, trying to pull him from the tree, flaying him, cutting to the bone. Shadow knew in his soul that the real storm had truly begun... —Barry Forshaw</p>
-                                    </div>
-                                    <!-- End description for American Gods -->
-                                    <span class="asin">0755322819</span>
-                                </div>
                                 <div class="medium" id="mediumCAA48759-587C-46DC-A2CB-86D6FD6CDC51">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descCAA48759-587C-46DC-A2CB-86D6FD6CDC51')">
-                                                    <img src="images/CAA48759-587C-46DC-A2CB-86D6FD6CDC51-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0553212419?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Sherlock Holmes: Vol 1: The Complete Novels and Stories</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Sir%20Arthur%20Conan%20Doyle&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Sir Arthur Conan Doyle  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descCAA48759-587C-46DC-A2CB-86D6FD6CDC51">
+                                    <div class="cover" onclick="showZoomedCover('CAA48759-587C-46DC-A2CB-86D6FD6CDC51');">
+                                        <img src="images/CAA48759-587C-46DC-A2CB-86D6FD6CDC51-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/0553212419?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Sherlock Holmes: Vol 1: The Complete Novels and Stories</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Sir%20Arthur%20Conan%20Doyle&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Sir Arthur Conan Doyle  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p></p>
                                     </div>
                                     <!-- End description for Sherlock Holmes: Vol 1: The Complete Novels and Stories -->
                                     <span class="asin">0553212419</span>
                                 </div>
-                                <div class="medium" id="mediumD807FAF9-5417-4A70-8BFE-F08E5C548E36">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descD807FAF9-5417-4A70-8BFE-F08E5C548E36')">
-                                                    <img src="images/D807FAF9-5417-4A70-8BFE-F08E5C548E36-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857230140?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">A Canticle for Leibowitz</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Walter%20M.%20Miller&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Walter M. Miller  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descD807FAF9-5417-4A70-8BFE-F08E5C548E36">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for A Canticle for Leibowitz -->
-                                    <span class="asin">1857230140</span>
-                                </div>
                                 <div class="medium" id="mediumA8847235-D53E-4FB4-BB76-4AD99EC7BF44">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descA8847235-D53E-4FB4-BB76-4AD99EC7BF44')">
-                                                    <img src="images/A8847235-D53E-4FB4-BB76-4AD99EC7BF44-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1857989945?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Tales Of The Dying Earth</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Jack%20Vance&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Jack Vance  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descA8847235-D53E-4FB4-BB76-4AD99EC7BF44">
+                                    <div class="cover" onclick="showZoomedCover('A8847235-D53E-4FB4-BB76-4AD99EC7BF44');">
+                                        <img src="images/A8847235-D53E-4FB4-BB76-4AD99EC7BF44-256.png" alt="" style="max-width: 60px; max-height: 60px" />
+                                    </div>
+                                    <a href="http://www.amazon.co.uk/dp/1857989945?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Tales Of The Dying Earth</a>
+                                    <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Jack%20Vance&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Jack Vance  </a>
+                                    <div class="rating"></div>
+                                    <div class="buttons">
+                                        <img src="images/moredetails-close.png" alt="More Details" class="details_button" onclick="clickMediumDetailsButton(this);" />
+                                    </div>
+                                    <div class="description">
                                         <p>Somewhere at the end of time, the sun gutters towards final death, science has long ago been replaced by alchemy and demonic invocation and the few inhabitants of the world wander around with a near-psychotic ennui and yearning. The original six stories Vance wrote early in his career are moody and poetic and genially depraved; when he came back to his dying earth, years later, it was in a rather different mood and the two volumes of adventures in which Cugel the Clever proves how little he deserves his sobriquet have much of the poetry, but also a sly wit that was not the early stories' strength. Cugel is incapable of leaving alone anything not nailed down, and much that is; he wanders his world miraculously surviving his own cupidity and treachery—yet is no worse than the smarter, more beautiful people he meets and more often than not better. More recently, he produced the slighter and almost whimsical tales of the magician Rhialto the Marvellous; Vance's poetic and comic strains of invention work effectively in tandem. The Dying Earth collects all of these stories, tragic, comic and charming—they take us to one of the strangest places and attractively affected styles in all fantasy. —Roz Kaveney</p>
                                     </div>
                                     <!-- End description for Tales Of The Dying Earth -->
                                     <span class="asin">1857989945</span>
-                                </div>
-                                <div class="medium" id="medium4F80860D-C9A3-474E-B2AF-582C4F47B3B6">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc4F80860D-C9A3-474E-B2AF-582C4F47B3B6')">
-                                                    <img src="images/4F80860D-C9A3-474E-B2AF-582C4F47B3B6-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0312890001?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Wraeththu Omnibus</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Storm%20Constantine&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Storm Constantine  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc4F80860D-C9A3-474E-B2AF-582C4F47B3B6">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Wraeththu Omnibus -->
-                                    <span class="asin">0312890001</span>
-                                </div>
-                                <div class="medium" id="medium14737245-FBFF-4449-96CA-137418F77078">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc14737245-FBFF-4449-96CA-137418F77078')">
-                                                    <img src="images/14737245-FBFF-4449-96CA-137418F77078-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1844166643?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Mechanicum</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Graham%20McNeill&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Graham McNeill  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc14737245-FBFF-4449-96CA-137418F77078">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for Mechanicum -->
-                                    <span class="asin">1844166643</span>
-                                </div>
-                                <div class="medium" id="mediumD749BEB6-DF7A-4C7F-9CD6-6D74A0ACE3ED">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descD749BEB6-DF7A-4C7F-9CD6-6D74A0ACE3ED')">
-                                                    <img src="images/D749BEB6-DF7A-4C7F-9CD6-6D74A0ACE3ED-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1849013055?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Mammoth Book of Apocalyptic SF</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Mike%20Ashley&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Mike Ashley  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-half.png" alt="~" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descD749BEB6-DF7A-4C7F-9CD6-6D74A0ACE3ED">
-                                        <p>There have been full of stories of one or other possible Armageddon, whether by nuclear war, plague, cosmic catastrophe or, more recently, global warming, terrorism, genetic engineering, AIDS and other pandemics. These stories describe the fall of civilization, the destruction of the entire Earth, or the end of the Universe itself.</p>
-                                    </div>
-                                    <!-- End description for The Mammoth Book of Apocalyptic SF -->
-                                    <span class="asin">1849013055</span>
-                                </div>
-                                <div class="medium" id="mediumC2D17C19-C678-422F-9878-7810F7452175">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descC2D17C19-C678-422F-9878-7810F7452175')">
-                                                    <img src="images/C2D17C19-C678-422F-9878-7810F7452175-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/1597801585?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Windup Girl</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Paolo%20Bacigalupi&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Paolo Bacigalupi  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descC2D17C19-C678-422F-9878-7810F7452175">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for The Windup Girl -->
-                                    <span class="asin">1597801585</span>
-                                </div>
-                                <div class="medium" id="mediumD0C99357-48A9-45AD-9C4D-527D8EB89E5E">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descD0C99357-48A9-45AD-9C4D-527D8EB89E5E')">
-                                                    <img src="images/D0C99357-48A9-45AD-9C4D-527D8EB89E5E-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0575083123?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Galactic North</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Alastair%20Reynolds&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Alastair Reynolds  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descD0C99357-48A9-45AD-9C4D-527D8EB89E5E">
-                                        <p>A fantastic foray back into the world of REVELATION SPACE by Britain's mastersinger of the space opera!</p>
-                                    </div>
-                                    <!-- End description for Galactic North -->
-                                    <span class="asin">0575083123</span>
-                                </div>
-                                <div class="medium" id="mediumC4A8993C-85CE-47F9-9037-526FB66F7E2C">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('descC4A8993C-85CE-47F9-9037-526FB66F7E2C')">
-                                                    <img src="images/C4A8993C-85CE-47F9-9037-526FB66F7E2C-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0007256744?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">Empire of Ivory</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Naomi%20Novik&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Naomi Novik  </a>
-                                                <div class="rating">
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-filled.png" alt="*" />
-                                                    <img src="images/star-empty.png" alt="-" />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="descC4A8993C-85CE-47F9-9037-526FB66F7E2C">
-                                        <p>Naomi Novik's stunning series of novels follow the adventures of Captain William Laurence and his fighting dragon Temeraire as they travel from the shores of Britain to China and Africa.</p>
-                                    </div>
-                                    <!-- End description for Empire of Ivory -->
-                                    <span class="asin">0007256744</span>
-                                </div>
-                                <div class="medium" id="medium55DE8986-44E0-45EC-B577-EC112FB4C1C8">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc55DE8986-44E0-45EC-B577-EC112FB4C1C8')">
-                                                    <img src="images/55DE8986-44E0-45EC-B577-EC112FB4C1C8-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0575081716?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The Stainless Steel Rat Omnibus</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Harry%20Harrison&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Harry Harrison  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc55DE8986-44E0-45EC-B577-EC112FB4C1C8">
-                                        <p>Slippery Jim is back in one mega volume of his greatest ever adventures! .</p>
-                                    </div>
-                                    <!-- End description for The Stainless Steel Rat Omnibus -->
-                                    <span class="asin">0575081716</span>
-                                </div>
-                                <div class="medium" id="medium8EE84123-70F1-44CD-9DFC-95B08BAA443F">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc8EE84123-70F1-44CD-9DFC-95B08BAA443F')">
-                                                    <img src="images/8EE84123-70F1-44CD-9DFC-95B08BAA443F-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/0312863772?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">The World of Tiers: Behind the Walls of Terra: 2</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Philip%20Jose%20Farmer&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Philip Jose Farmer  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc8EE84123-70F1-44CD-9DFC-95B08BAA443F">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for The World of Tiers: Behind the Walls of Terra: 2 -->
-                                    <span class="asin">0312863772</span>
-                                </div>
-                                <div class="medium" id="medium5C56C3EF-D171-412C-A06B-92D5A9853DBD">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="#" onclick="toggle('desc5C56C3EF-D171-412C-A06B-92D5A9853DBD')">
-                                                    <img src="images/5C56C3EF-D171-412C-A06B-92D5A9853DBD-256.png" alt="" align="top" style="max-width: 60px; max-height: 60px" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://www.amazon.co.uk/dp/B0006C2QC2?SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="title">ONE STEP FROM EARTH</a>
-                                                <br />
-                                                <a href="http://www.amazon.co.uk/s?ie=UTF8&amp;index=books&amp;field-author=Harrison%20Harry&amp;SubscriptionId=1XKMQ76GH235KSFB1M02&amp;tag=deliciousmons-21&amp;linkCode=xm2" class="creator">Harrison Harry  </a>
-                                                <div class="rating"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="buttons"></div>
-                                    <div class="description" style="display:none;" id="desc5C56C3EF-D171-412C-A06B-92D5A9853DBD">
-                                        <p></p>
-                                    </div>
-                                    <!-- End description for ONE STEP FROM EARTH -->
-                                    <span class="asin">B0006C2QC2</span>
                                 </div>
                             </td>
                         </tr>
@@ -900,7 +313,7 @@ a {
                 <!-- End media -->
                 <hr style="margin-top: 6pt" />
                 <div class="navigation">
-                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> </span><span class="arrow right">&nbsp;&nbsp;&nbsp;</span> 
+                    <div class="crumbs"><span class="arrow left">&nbsp;&nbsp;&nbsp;</span> <span class="pages"><span class="page">1</span> <a class="page" href="toread-2.html">2</a> </span><a class="arrow right" href="toread-2.html">&nbsp;&nbsp;&nbsp;</a> 
 </div>
                 </div>
                 <!-- End navigation -->
@@ -913,7 +326,7 @@ a {
             <a href="http://www.delicious-monster.com">
                 <img src="images/monster.png" alt="" />
                  Made with Delicious Library</a>
-            <p style="display:none">Springfield, State zipflap congrotus delicious library Clancy, Liam
+            <p>Springfield, State zipflap congrotus delicious library Clancy, Liam
 </p>
         </div>
         <!-- End footer -->

@@ -53,6 +53,11 @@ a img {
 	border-bottom: 1px solid #ccc;
 }
 
+#collection_info #user img {
+    width: 60px;
+    height: 60px;
+}
+
 #collection_info #username {
 	margin: 0 10px;
 	font-size: 14pt;
@@ -382,6 +387,8 @@ td {
 #zoom img {
     margin-top: 20px;
     cursor: pointer;
+	max-width: 256px;
+	max-height: 256px;
 }
 
 #zoom .closebox {
@@ -408,7 +415,7 @@ td {
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 2px 1px;
+    text-shadow: rgba(255, 124, 61, 0.5) 0 2px 1px;
     z-index: 2;
 }
 
