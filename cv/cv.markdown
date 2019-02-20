@@ -12,9 +12,9 @@ I am interested in innovative and creative projects/products relating to user ex
 I am seeking a permanent, senior, Web/Software Developer role within a core team in an established startup or new company.
 
 #### Contact details
-* Personal site:		http://metafeather.net/
-* Public code:	http://github.com/metafeather/
-* Linkedin:	http://www.linkedin.com/in/liamclancy/
+* Personal site:	http://metafeather.net/
+* Public code:		http://github.com/metafeather/
+* Linkedin:		http://www.linkedin.com/in/liamclancy/
 
 ## PROFILE
 Since 1993, I have applied Design Management concepts to the Internet and New Media companies in which I am involved. My current passion is with Developer Evangelism and Experience.
@@ -85,6 +85,7 @@ I have my own PC’s, Macs, iPhones and iPads and a comprehensive network enviro
  
 ## WORK EXPERIENCE
 
+___
 > **Causata**, Floor 5, 33 Glasshouse St, London, UK.
 Permanent	Founder & Senior Developer.
 Jun 2008 – Nov Nov 2012	
@@ -104,6 +105,7 @@ Funded by Accel, Causata is a multi channel Predictive Analytics  solution using
 
 <code>http://www.causata.com/ - See Key Roles</code><br>
 
+___
 > **Omniture Test&Target (TouchClarity)**, Floor 3, Adam House, Fitzroy Sq, London, UK.
 Permanent	Senior Web Engineer.
 Jan 2006 – Jun 2008	
@@ -125,6 +127,7 @@ Test&Target is an online channel Behavioural Targeting solution acquired by Omni
 
 <code>http://www.adobe.com/uk/products/testandtarget.html - See Key Roles</code><br>
 
+___
 > **Incepta Online (Citigate MARCHCom)**, Eldon House, 1 Dorset Street, London, UK.
 Permanent	Technical Manager, Business analyst.
 Aug 2005 – Jan 2006	
@@ -149,6 +152,7 @@ Now rebranded as Twentysix digital, Citigate MARCHCom provide Investor Relations
 
 <code>http://www.twentysixdigital.com/</code><br>
 
+___
 > Barclays Clearlybusiness, Floor 1, Gilray House, 146-150 City Road, London, UK.</code><br>
 Permanent	Technical Analyst, Barclays Business Manger.
 Jan 2004 – Nov 2005	
@@ -171,6 +175,7 @@ Barclays Business Manger is a successful consumer level desktop framework sold b
 
 <code>http://bbm.clearlybusiness.com/ - See also Key Roles</code><br>
 
+___
 > **Barclays Clearlybusiness**, Floor 1, Gilray House, 146-150 City Road, London, UK.
 Permanent	Internet Manager.
 Aug 2002 – Aug 2005	
@@ -190,12 +195,14 @@ Barclays Clearlybusiness is a financial product development and support channel 
 
 <code>http://www.clearlybusiness.com/</code><br>
 
+___
 > **&lt;kpe&gt; UK Ltd**, The Media Centre, 19 Bolsover Street, London, UK.</code><br>
 Permanent	Project Consultant, E4.com.
 Jun 2001 - Sep 2001	
 	
 <code>http://www.e4.com/ - See also Key Roles</code><br>
 
+___
 > **&lt;kpe&gt; UK Ltd**, New Cavendish Street, London, UK.
 Permanent	Senior Client-Side Web Developer.
 Aug 1999 – Jun 2001	
@@ -220,27 +227,27 @@ Aug 1999 – Jun 2001
 * Development of interactive quiz games using Flash and JavaScript
 * System Administration and maintenance
 
-<code>
-http://www.e4.com/ - See Key Roles (no longer available)
-http://www.fotango.com/ - See Key Roles (no longer available)
-http://www.flutter.com/ - See Key Roles (no longer available)
-http://www.antennaaudio.com/ (since redesigned)
-http://www.jamiesbars.co.uk/ (since redesigned)
-http://www.thedma.org/ (since redesigned)
-http://www.applebelly.com/ (no longer available)
-http://www.hignfy.co.uk/ (no longer available)
-http://www.firsttuesday.co.uk/ (no longer available)
-http://www.henriwintermans.com/ (no longer available)
-http://www.cafe-creme.com/ (no longer available)
-http://www.frescocigars.com/ (no longer available)
-</code><br>
+<code>http://www.e4.com/ - See Key Roles (no longer available)</code><br>
+<code>http://www.fotango.com/ - See Key Roles (no longer available)</code><br>
+<code>http://www.flutter.com/ - See Key Roles (no longer available)</code><br>
+<code>http://www.antennaaudio.com/ (since redesigned)</code><br>
+<code>http://www.jamiesbars.co.uk/ (since redesigned)</code><br>
+<code>http://www.thedma.org/ (since redesigned)</code><br>
+<code>http://www.applebelly.com/ (no longer available)</code><br>
+<code>http://www.hignfy.co.uk/ (no longer available)</code><br>
+<code>http://www.firsttuesday.co.uk/ (no longer available)</code><br>
+<code>http://www.henriwintermans.com/ (no longer available)</code><br>
+<code>http://www.cafe-creme.com/ (no longer available)</code><br>
+<code>http://www.frescocigars.com/ (no longer available)</code><br>
 
+___
 > **Aquent Partners**, Bedford Street, London, UK.
 Permanent	Web Developer
 Aug 1999 - Nov 1999	
 
 Contract HTML, DHTML, JavaScript and server-side project fulfilment (PHP) on per project basis
 
+___
 > **Futuremedia Plc**, Walberton, West Sussex, UK.
 Permanent	Webmaster / Web Developer.
 Dec 1997 - Aug 1999	
@@ -266,11 +273,10 @@ Futuremedia is a proven provider of innovative and effective e-learning solution
 * Creation and integration of MPEG video streams
 * Team Leader for the internationalisation of CD training
 
-<code>
-http://www.solstra.com/ (no longer available)
-http://www.futuremedia.co.uk/ (no longer available)
-http://www.fordlearning.com/ (no longer available)
-</code>
+<code>http://www.solstra.com/ (no longer available)</code><br>
+<code>http://www.futuremedia.co.uk/ (no longer available)</code><br>
+<code>http://www.fordlearning.com/ (no longer available)</code><br>
+
 
 ## EDUCATION
 
@@ -288,7 +294,7 @@ Physics, Economics, History
 
 
 ## KEY ROLES AND ACHIEVEMENTS
-
+___
 > **Causata.com, Founder and Senior Developer**, Jun 2008 – Nov Nov 2012
 
 Funded by Accel, Causata is a multi channel Predictive Analytics solution using Big Data with Machine Learning.
@@ -303,7 +309,7 @@ Causata is currently successfully expanding its client baseand technology across
 
 <code>http://www.causata.com/</code><br>
 
-
+___
 > **Omniture Test&Target (TouchClarity), Senior Web Engineer**, Jan 2006 – Jun 2008
 
 Omniture provide business intelligence solutions for online clients, including fully automated Onsite Behavioural Targeting and reports.
@@ -318,7 +324,7 @@ After our acquisition by Omniture and also during the subsequent merger with Off
 
 <code>http://www.omniture.com/en/products/conversion/testandtarget</code><br>
 
-
+___
 > **Barclays Business Manager, Internet Manager & Technical Analyst** for Barclays Clearlybusiness, Jan 2004 – Aug 2005
 
 Barclays Clearlybusiness is a financial product development and support channel for Barclays Small Business clients.
@@ -336,7 +342,7 @@ Barclays Business Manger is a successful revenue stream for Barclays bank, and i
 
 <code>http://bbm.clearlybusiness.com/</code><br>
 
-
+___
 > **E4.com, Senior Client-Side Web Developer** for &lt;kpe&gt;, August 2000 – September 2001
 
 The E4 web-site was a broadband entertainment portal that supported the launch of Channel4's entertainment channel in 2001.
@@ -353,12 +359,10 @@ Additionally the DHTML API was documented and made available, along with secure 
 
 E4.com was the first site of its kind in Europe. Shortly after launch, the site was reaching 1.3 million U.K. adults between the ages of 16-34 every week, and now having achieved its goals has been wholly incorporated into the main Channel4 web-site.
 
-<code>
-http://www.e4.com/
-http://www.channel4.com/entertainment/ - microsites: Trigger Happy TV, Dare 4 Dosh, Popworld, So Graham Norton, Action Stan, Show Me The Funny, Banzai
-</code><br>
+<code>http://www.e4.com/</code><br>
+<code>http://www.channel4.com/entertainment/ - microsites: Trigger Happy TV, Dare 4 Dosh, Popworld, So Graham Norton, Action Stan, Show Me The Funny, Banzai</code><br>
 
-
+___
 > **Fotango.com, Senior Client-Side Web Developer** for &lt;kpe&gt;, September 2000 – March 2001
 
 Fotango.com is an online photography site. All activities are managed behind a security system to protect the privacy and copyright of its members.
@@ -371,6 +375,7 @@ Fotango.com became the first European site of its kind and is now a wholly owned
 
 <code>http://www.fotango.com/</code><br>
 
+___
 > **Flutter.com, Senior Client-Side Web Developer** for &lt;kpe&gt;, November 1999 – February 2000
 
 Flutter.com is an online betting exchange which acts as a broker and provides the technology to match bets placed by individuals.
