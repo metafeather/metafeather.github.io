@@ -85,7 +85,7 @@ I have my own PC’s, Macs, iPhones and iPads and a comprehensive network enviro
  
 ## WORK EXPERIENCE
 
-### Causata, Floor 5, 33 Glasshouse St, London, UK.
+<code>Causata, Floor 5, 33 Glasshouse St, London, UK.</code><br>
 Permanent	Founder & Senior Developer.
 Jun 2008 – Nov Nov 2012	
 
@@ -104,7 +104,7 @@ Funded by Accel, Causata is a multi channel Predictive Analytics  solution using
 
 > http://www.causata.com/ - See Key Roles
 
-### Omniture Test&Target (TouchClarity), Floor 3, Adam House, Fitzroy Sq, London, UK.
+<code>Omniture Test&Target (TouchClarity), Floor 3, Adam House, Fitzroy Sq, London, UK.</code><br>
 Permanent	Senior Web Engineer.
 Jan 2006 – Jun 2008	
 
@@ -125,7 +125,7 @@ Test&Target is an online channel Behavioural Targeting solution acquired by Omni
 
 > http://www.adobe.com/uk/products/testandtarget.html - See Key Roles
 
-### Incepta Online (Citigate MARCHCom), Eldon House, 1 Dorset Street, London, UK.
+<code>Incepta Online (Citigate MARCHCom), Eldon House, 1 Dorset Street, London, UK.</code><br>
 Permanent	Technical Manager, Business analyst.
 Aug 2005 – Jan 2006	
 
@@ -149,7 +149,7 @@ Now rebranded as Twentysix digital, Citigate MARCHCom provide Investor Relations
 
 > http://www.twentysixdigital.com/
 
-### Barclays Clearlybusiness, Floor 1, Gilray House, 146-150 City Road, London, UK.
+<code>Barclays Clearlybusiness, Floor 1, Gilray House, 146-150 City Road, London, UK.</code><br>
 Permanent	Technical Analyst, Barclays Business Manger.
 Jan 2004 – Nov 2005	
 
@@ -171,7 +171,7 @@ Barclays Business Manger is a successful consumer level desktop framework sold b
 
 > http://bbm.clearlybusiness.com/ - See also Key Roles
 
-### Barclays Clearlybusiness, Floor 1, Gilray House, 146-150 City Road, London, UK.
+<code>Barclays Clearlybusiness, Floor 1, Gilray House, 146-150 City Road, London, UK.</code><br>
 Permanent	Internet Manager.
 Aug 2002 – Aug 2005	
 
@@ -190,17 +190,17 @@ Barclays Clearlybusiness is a financial product development and support channel 
 
 > http://www.clearlybusiness.com/
 
-### <kpe> UK Ltd, The Media Centre, 19 Bolsover Street, London, UK.
+<code>&lt;kpe&gt; UK Ltd, The Media Centre, 19 Bolsover Street, London, UK.</code><br>
 Permanent	Project Consultant, E4.com.
 Jun 2001 - Sep 2001	
 	
 > http://www.e4.com/ - See also Key Roles
 
-### <kpe> UK Ltd, New Cavendish Street, London, UK.
+<code>&lt;kpe&gt; UK Ltd, New Cavendish Street, London, UK.
 Permanent	Senior Client-Side Web Developer.
 Aug 1999 – Jun 2001	
 	
-<kpe> is an international new-media agency which creates innovative communications solutions for clients in the entertainment industry.
+&lt;kpe&gt; is an international new-media agency which creates innovative communications solutions for clients in the entertainment industry.
 
 #### Responsibilities	
 * Lead Developer on mulitple projects
@@ -233,13 +233,13 @@ Aug 1999 – Jun 2001
 > http://www.cafe-creme.com/ (no longer available)
 > http://www.frescocigars.com/ (no longer available)
 
-### Aquent Partners, Bedford Street, London, UK.
+<code>Aquent Partners, Bedford Street, London, UK.</code><br>
 Permanent	Web Developer
 Aug 1999 - Nov 1999	
 
 Contract HTML, DHTML, JavaScript and server-side project fulfilment (PHP) on per project basis
 
-### Futuremedia Plc, Walberton, West Sussex, UK.
+<code>Futuremedia Plc, Walberton, West Sussex, UK.</code><br>
 Permanent	Webmaster / Web Developer.
 Dec 1997 - Aug 1999	
 
@@ -285,7 +285,7 @@ Physics, Economics, History
 
 ## KEY ROLES AND ACHIEVEMENTS
 
-### Causata.com, Founder and Senior Developer, Jun 2008 – Nov Nov 2012
+<code>Causata.com, Founder and Senior Developer, Jun 2008 – Nov Nov 2012</code><br>
 
 Funded by Accel, Causata is a multi channel Predictive Analytics solution using Big Data with Machine Learning.
 
@@ -300,7 +300,7 @@ Causata is currently successfully expanding its client baseand technology across
 > http://www.causata.com/
 
 
-### Omniture Test&Target (TouchClarity), Senior Web Engineer, Jan 2006 – Jun 2008
+<code>Omniture Test&Target (TouchClarity), Senior Web Engineer, Jan 2006 – Jun 2008</code><br>
 
 Omniture provide business intelligence solutions for online clients, including fully automated Onsite Behavioural Targeting and reports.
 
@@ -314,7 +314,8 @@ After our acquisition by Omniture and also during the subsequent merger with Off
 
 > http://www.omniture.com/en/products/conversion/testandtarget
 
-### Barclays Business Manager, Internet Manager & Technical Analyst for Barclays Clearlybusiness, Jan 2004 – Aug 2005
+
+<code>Barclays Business Manager, Internet Manager & Technical Analyst for Barclays Clearlybusiness, Jan 2004 – Aug 2005</code><br>
 
 Barclays Clearlybusiness is a financial product development and support channel for Barclays Small Business clients.
 
@@ -332,7 +333,7 @@ Barclays Business Manger is a successful revenue stream for Barclays bank, and i
 > http://bbm.clearlybusiness.com/
 
 
-### E4.com, Senior Client-Side Web Developer for <kpe>, August 2000 – September 2001
+<code>E4.com, Senior Client-Side Web Developer for &lt;kpe&gt;, August 2000 – September 2001</code><br>
 
 The E4 web-site was a broadband entertainment portal that supported the launch of Channel4's entertainment channel in 2001.
 
@@ -351,7 +352,7 @@ E4.com was the first site of its kind in Europe. Shortly after launch, the site 
 > http://www.e4.com/
 > http://www.channel4.com/entertainment/ - microsites: Trigger Happy TV, Dare 4 Dosh, Popworld, So Graham Norton, Action Stan, Show Me The Funny, Banzai
 
-### Fotango.com, Senior Client-Side Web Developer for <kpe>, September 2000 – March 2001
+<code>Fotango.com, Senior Client-Side Web Developer for &lt;kpe&gt;, September 2000 – March 2001</code><br>
 
 Fotango.com is an online photography site. All activities are managed behind a security system to protect the privacy and copyright of its members.
 
@@ -363,7 +364,7 @@ Fotango.com became the first European site of its kind and is now a wholly owned
 
 > http://www.fotango.com/
 
-### Flutter.com, Senior Client-Side Web Developer for <kpe>, November 1999 – February 2000
+<code>Flutter.com, Senior Client-Side Web Developer for &lt;kpe&gt;, November 1999 – February 2000</code><br>
 
 Flutter.com is an online betting exchange which acts as a broker and provides the technology to match bets placed by individuals.
 
