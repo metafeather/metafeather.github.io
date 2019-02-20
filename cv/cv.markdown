@@ -196,7 +196,7 @@ Jun 2001 - Sep 2001
 	
 > http://www.e4.com/ - See also Key Roles
 
-<code>&lt;kpe&gt; UK Ltd, New Cavendish Street, London, UK.
+<code>&lt;kpe&gt; UK Ltd, New Cavendish Street, London, UK.</code><br>
 Permanent	Senior Client-Side Web Developer.
 Aug 1999 – Jun 2001	
 	
