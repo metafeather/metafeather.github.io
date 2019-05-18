@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "mocha --color --reporter=list --watch"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}

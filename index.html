@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Metafeather.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon made by freepik.com as CC 3.0 via https://www.flaticon.com/free-icon/feather_420330 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_feather_16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="img/favicon_feather_128.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon_feather_512.png">
+    <link rel="mask-icon" href="img/favicon_feather.svg" color="#ff0000">        
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        section.profile {
+            margin: 30px;
+        }
+        div.circle {
+            cursor: crosshair;
+            width: 128px;
+            height: 125px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid darkgrey;   
+            background-color: lightgrey;       
+        }
+        div.circle:hover {
+            background-color: goldenrod;       
+            border-color: goldenrod;   
+        }
+        img.avatar { 
+            display: inline;
+            margin: 0 auto;
+        }
+
+        ul.services {
+            list-style-type: none;
+            padding: none;
+            margin: none;
+        }
+        ul.services a {
+            color: initial;
+            text-decoration: none;
+        }
+        li[data-service] {
+            cursor: pointer;
+            padding-left: 1.4em;
+            background: url('https://www.google.com/s2/favicons?domain=www.google.com') no-repeat left center; 
+        }
+        li[data-service="pinboard"] {
+            background-image: url('https://www.google.com/s2/favicons?domain=www.pinboard.in'); 
+        }        
+        li[data-service="github"] {
+            background-image: url('https://www.google.com/s2/favicons?domain=www.github.com'); 
+        }
+        li[data-service="linkedin"] {
+            background-image: url('https://www.google.com/s2/favicons?domain=www.linkedin.com'); 
+        }                       
+    </style>
+
+  </head>
+  <body class="mf">
+
+    <section class="profile">
+        <div class="circle">
+            <img class="avatar" title="This is me, forever young!" src="img/icon_liam_eps_128.png" />
+        </div>
+        <p>
+            Liam Clancy (metafeather)
+        </p>
+    </section>
+
+    <section class="links">
+        <ul class="services">
+            <li data-service="google"><a href="https://www.google.com/?q=metafeather">Google</a></li>
+            <li data-service="pinboard"><a href="https://www.pinboard.in/u:metafeather">Pinboard</a></li>
+            <li data-service="github"><a href="https://www.github.com/metafeather">Github</a></li>
+            <li data-service="linkedin"><a href="https://www.linkedin.com/in/metafeather">LinkedIn</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Run in browser tests and display a report if ?debug present in URL -->
+    <div id="mocha" class="hide"></div>
+    <style>
+        @import "https://unpkg.com/mocha/mocha.css";
+        #mocha.hide { display: none; } 
+    </style>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script class="mocha-init">
+        // mock node require
+        function require(pkg){return window[pkg];}
+        mocha.setup('bdd');
+    </script>
+    <script src="test/test.js"></script>
+    <script class="mocha-exec">
+        if (location.search.includes('debug')) {
+            // display report
+            document.getElementById("mocha").classList.remove("hide");
+            mocha.globals([]);
+            mocha.checkLeaks();
+            mocha.run();
+        }
+    </script>
+
+  </body>
+</html>
