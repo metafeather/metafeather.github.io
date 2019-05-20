@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="mf">
+
+    <!-- Run in browser tests and display a report if ?debug present in URL -->
+    <div id="mocha" class="hide"></div>
+    <style>
+        @import "https://unpkg.com/mocha/mocha.css";
+        #mocha.hide { display: none; } 
+    </style>
+    
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script class="mocha-init">
+        // mock node require
+        function require(pkg){return window[pkg];}
+        mocha.setup('bdd');
+    </script>
+    <script src="test/test.js"></script>
+    <script class="mocha-exec">
+        if (location.search.includes('debug')) {
+            // display report
+            document.getElementById("mocha").classList.remove("hide");
+            mocha.globals([]);
+            mocha.checkLeaks();
+            mocha.run();
+        }
+    </script>
+
+</body>
+</html>

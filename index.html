@@ -4,108 +4,98 @@
     <meta charset="utf-8" />
     <title>Metafeather.net</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Icon made by freepik.com as CC 3.0 via https://www.flaticon.com/free-icon/feather_420330 -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_feather_16.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="img/favicon_feather_128.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon_feather_512.png">
-    <link rel="mask-icon" href="img/favicon_feather.svg" color="#ff0000">        
-    <style>
-        body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-        }
+    <!-- Favicon made by freepik.com as CC 3.0 via https://www.flaticon.com/free-icon/feather_420330 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_feather_16.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="img/favicon_feather_128.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon_feather_512.png" />
+    <link rel="mask-icon" href="img/favicon_feather.svg" color="#ff0000" />        
 
-        section.profile {
-            margin: 30px;
-        }
-        div.circle {
-            cursor: crosshair;
-            width: 128px;
-            height: 125px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 50%;
-            border: 1px solid darkgrey;   
-            background-color: lightgrey;       
-        }
-        div.circle:hover {
-            background-color: goldenrod;       
-            border-color: goldenrod;   
-        }
-        img.avatar { 
-            display: inline;
-            margin: 0 auto;
-        }
-
-        ul.services {
-            list-style-type: none;
-            padding: none;
-            margin: none;
-        }
-        ul.services a {
-            color: initial;
-            text-decoration: none;
-        }
-        li[data-service] {
-            cursor: pointer;
-            padding-left: 1.4em;
-            background: url('https://www.google.com/s2/favicons?domain=www.google.com') no-repeat left center; 
-        }
-        li[data-service="pinboard"] {
-            background-image: url('https://www.google.com/s2/favicons?domain=www.pinboard.in'); 
-        }        
-        li[data-service="github"] {
-            background-image: url('https://www.google.com/s2/favicons?domain=www.github.com'); 
-        }
-        li[data-service="linkedin"] {
-            background-image: url('https://www.google.com/s2/favicons?domain=www.linkedin.com'); 
-        }                       
-    </style>
-
+    <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body class="mf">
+  <body>
 
-    <section class="profile">
+    <div class="card">
+    <div class="card_left">
+        <section class="profile">
         <div class="circle">
-            <img class="avatar" title="This is me, forever young!" src="img/icon_liam_eps_128.png" />
+            <img class="avatar" title="This is me, forever young!" src="img/icon_liam_eps_512.png" />
         </div>
-        <p>
-            Liam Clancy (metafeather)
-        </p>
-    </section>
+        <p class="nickname">metafeather</p>
+        </section>
+    </div> <!-- end card_left -->
 
-    <section class="links">
-        <ul class="services">
-            <li data-service="google"><a href="https://www.google.com/?q=metafeather">Google</a></li>
-            <li data-service="pinboard"><a href="https://www.pinboard.in/u:metafeather">Pinboard</a></li>
-            <li data-service="github"><a href="https://www.github.com/metafeather">Github</a></li>
-            <li data-service="linkedin"><a href="https://www.linkedin.com/in/metafeather">LinkedIn</a></li>
+    <div class="card_right">
+        <h1>Liam Clancy</h1>
+        <section class="details">
+        <ul>
+            <li>1996 - 2019</li>
+            <li>Senior Software Engineer (Applied AI)</li>
         </ul>
-    </section>
-
-
-    <!-- Run in browser tests and display a report if ?debug present in URL -->
-    <div id="mocha" class="hide"></div>
-    <style>
-        @import "https://unpkg.com/mocha/mocha.css";
-        #mocha.hide { display: none; } 
-    </style>
-    <script src="https://unpkg.com/chai/chai.js"></script>
-    <script src="https://unpkg.com/mocha/mocha.js"></script>
-    <script class="mocha-init">
-        // mock node require
-        function require(pkg){return window[pkg];}
-        mocha.setup('bdd');
-    </script>
-    <script src="test/test.js"></script>
-    <script class="mocha-exec">
-        if (location.search.includes('debug')) {
-            // display report
-            document.getElementById("mocha").classList.remove("hide");
-            mocha.globals([]);
-            mocha.checkLeaks();
-            mocha.run();
-        }
-    </script>
-
+        <div class="rating">
+            <div class="stars">
+                <fieldset class="rating">
+                <input id="star10" name="rating" type="radio" value="10">
+                <label class="full" for="star10" title="10 stars"></label>
+                <input id="star9half" name="rating" type="radio" value="9 and a half">
+                <label class="half" for="star9half" title="9.5 stars"></label>
+                <input id="star9" name="rating" type="radio" value="9" checked>
+                <label class="full" for="star9" title="9 stars"></label>
+                <input id="star8half" name="rating" type="radio" value="8 and a half">
+                <label class="half" for="star8half" title="8.5 stars"></label>
+                <input id="star8" name="rating" type="radio" value="8">
+                <label class="full" for="star8" title="8 stars"></label>
+                <input id="star7half" name="rating" type="radio" value="7 and a half">
+                <label class="half" for="star7half" title="7.5 stars"></label>
+                <input id="star7" name="rating" type="radio" value="7">
+                <label class="full" for="star7" title="7 stars"></label>
+                <input id="star6half" name="rating" type="radio" value="6 and a half">
+                <label class="half" for="star6half" title="6.5 stars"></label>
+                <input id="star6" name="rating" type="radio" value="6">
+                <label class="full" for="star6" title="6 star"></label>
+                <input id="star5half" name="rating" type="radio" value="5 and a half">
+                <label class="half" for="star5half" title="5.5 stars"></label>
+                <input id="star5" name="rating" type="radio" value="5">
+                <label class="full" for="star5" title="5 stars"></label>
+                <input id="star4half" name="rating" type="radio" value="4 and a half">
+                <label class="half" for="star4half" title="4.5 stars"></label>
+                <input id="star4" name="rating" type="radio" value="4">
+                <label class="full" for="star4" title="4 stars"></label>
+                <input id="star3half" name="rating" type="radio" value="3 and a half">
+                <label class="half" for="star3half" title="3.5 stars"></label>
+                <input id="star3" name="rating" type="radio" value="3">
+                <label class="full" for="star3" title="3 stars"></label>
+                <input id="star2half" name="rating" type="radio" value="2 and a half">
+                <label class="half" for="star2half" title="2.5 stars"></label>
+                <input id="star2" name="rating" type="radio" value="2">
+                <label class="full" for="star2" title="2 stars"></label>
+                <input id="star1half" name="rating" type="radio" value="1 and a half">
+                <label class="half" for="star1half" title="1.5 stars"></label>
+                <input id="star1" name="rating" type="radio" value="1">
+                <label class="full" for="star1" title="1 star"></label>
+                <input id="starhalf" name="rating" type="radio" value="half">
+                <label class="half" for="starhalf" title="0.5 stars"></label>
+                </fieldset>
+            </div>
+        </div>
+        <p class="review">
+                I am interested in substantive, creative products supporting researcher UX, 
+                data quality and the creation of extraordinary web applications for big data 
+                visualisation in a design led environment. <br />
+                My recent passion has been explaining practical machine learning to end users, 
+                particularly other researchers. <br /><br />
+        </p>        
+        <a href="https://www.linkedin.com/in/metafeather">Read more</a>
+        </section>
+        <section class="links">
+        <ul class="services">
+            <li><a title="Github code" href="https://www.github.com/metafeather"><img src="https://www.google.com/s2/favicons?domain=www.github.com" /></a></li>
+            <li><a title="Pinboard links" href="https://www.pinboard.in/u:metafeather"><img src="https://www.google.com/s2/favicons?domain=www.pinboard.in" /></a></li>
+            <li><a title="LinkedIn CV" href="https://www.linkedin.com/in/metafeather"><img src="https://www.google.com/s2/favicons?domain=www.linkedin.com" /></a></li>
+            <li><a title="Flickr photos" href="https://www.flickr.com/photos/metafeather/collections/72157633233105595/"><img src="https://www.google.com/s2/favicons?domain=www.flickr.com" /></a></li>
+            <li><a title="Google me" href="https://www.google.com/?q=metafeather"><img src="https://www.google.com/s2/favicons?domain=www.google.com" /></a></li>
+        </ul>
+        </section>
+    </div> <!-- end card_right -->    
+    </div> <!-- end card -->
   </body>
 </html>

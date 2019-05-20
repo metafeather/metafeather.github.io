@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+body {
+    background: #e2e2e2;
+    width: 98%;
+    height: 100vh;            
+}
+
+div.card {
+    width: 800px;
+    height: 350px;
+    background: #1000ff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+div.card_left {
+    width: 40%;
+    height: 350px;
+    float: left;
+    overflow: hidden;
+    background: transparent;
+}
+
+section.links ul {
+    list-style-type: none;
+    padding: 4px 0 0 20px;
+    margin: 10px 0 0 330px ;
+    background-color: white;
+}    
+section.links li {
+    display: inline;
+    color: #e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 4px 0 0;
+}
+
+section.profile {
+    margin: 30px;
+}
+div.circle {
+    cursor: crosshair;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;   
+    background-color: white;       
+}
+img.avatar {
+    position: relative; 
+    width:100%;
+    top: 5px;
+}
+p.nickname {
+    margin: 0;
+    margin-top: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+div.card_right {
+    width:60%;
+    float:left;
+    background:#000000;
+    height:350px;
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;             
+}
+
+div.card_right h1 {
+    color :white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 40px;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 40px;
+    letter-spacing: 1px;
+}
+
+div.card_right .details ul {
+    list-style-type:none;
+    padding:0 0 0 40px;
+    margin:10px 0 0 0;
+}    
+div.card_right .details li {
+    display: inline;
+    color: #e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 40px 0 0;
+}
+
+.stars {
+    position:relative;
+    right:160px;
+    margin:10px 0 10px 0;
+}
+.stars fieldset, label { 
+    margin: 0; padding: 0; 
+}
+
+.rating { 
+  border: none;
+}
+.rating > input { 
+    display: none; 
+} 
+.rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    display: inline-block;
+    content: "\f005";
+    font-family: FontAwesome;
+}
+
+.rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label { 
+    color: #ddd;
+    float:right;
+}
+
+/* show gold star when clicked */
+.rating > input:checked ~ label { 
+    color: #FFD700;  
+}
+
+p.review {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    padding:0 40px 0 40px;
+    letter-spacing:1px;
+    margin:10px 0 10px 0;
+    line-height:20px;
+  }
+p.review ~ a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0 0 0 40px;
+    color: #ffda00;
+    margin: 0;
+}
